@@ -3421,5 +3421,199 @@
     "curing": "",
     "packaging": "",
     "purposes": []
+  },
+  {
+    "id": 111,
+    "brand": "Tokuyama Dental",
+    "partNumber": 16362,
+    "name": "Tokuyama Estecem II Plus Paste (Universal)",
+    "cat1": "Для врача-стоматолога и стоматологического кабинета",
+    "cat2": "Материалы",
+    "cat3": "Цементы и фиксация",
+    "price": "8407,13445",
+    "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-universal.jpg",
+    "series": "Tokuyama Estecem II Plus",
+    "specializations": [
+      "Ортопедия"
+    ],
+    "colors": [
+      "Universal (A3)"
+    ],
+    "consistency": "",
+    "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "hardness": "",
+    "curing": "",
+    "packaging": "",
+    "purposes": [
+      "Фиксация коронок",
+      "Фиксация вкладок",
+      "Фиксация накладок",
+      "Ремонт сколов",
+      "Фиксация виниров",
+      "Фиксация адгезивных мостовидных протезов"
+    ]
+  },
+  {
+    "id": 112,
+    "brand": "Tokuyama Dental",
+    "partNumber": 16363,
+    "name": "Tokuyama Estecem II Plus Clear",
+    "cat1": "Для врача-стоматолога и стоматологического кабинета",
+    "cat2": "Материалы",
+    "cat3": "Цементы и фиксация",
+    "price": "8407,13445",
+    "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-klar.jpg",
+    "series": "Tokuyama Estecem II Plus",
+    "specializations": [
+      "Ортопедия"
+    ],
+    "colors": [
+      "Clean"
+    ],
+    "consistency": "",
+    "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "hardness": "",
+    "curing": "",
+    "packaging": "",
+    "purposes": [
+      "Фиксация коронок",
+      "Фиксация вкладок",
+      "Фиксация накладок",
+      "Ремонт сколов",
+      "Фиксация виниров",
+      "Фиксация адгезивных мостовидных протезов"
+    ]
+  },
+  {
+    "id": 113,
+    "brand": "Tokuyama Dental",
+    "partNumber": 16364,
+    "name": "Tokuyama Estecem II Plus Brown",
+    "cat1": "Для врача-стоматолога и стоматологического кабинета",
+    "cat2": "Материалы",
+    "cat3": "Цементы и фиксация",
+    "price": "8407,13445",
+    "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-braun.jpg",
+    "series": "Tokuyama Estecem II Plus",
+    "specializations": [
+      "Ортопедия"
+    ],
+    "colors": [
+      "Brown (A5)"
+    ],
+    "consistency": "",
+    "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "hardness": "",
+    "curing": "",
+    "packaging": "",
+    "purposes": [
+      "Фиксация коронок",
+      "Фиксация вкладок",
+      "Фиксация накладок",
+      "Ремонт сколов",
+      "Фиксация виниров",
+      "Фиксация адгезивных мостовидных протезов"
+    ]
+  },
+  {
+    "id": 114,
+    "brand": "Tokuyama Dental",
+    "partNumber": 16365,
+    "name": "Tokuyama Estecem II Plus White Opaque",
+    "cat1": "Для врача-стоматолога и стоматологического кабинета",
+    "cat2": "Материалы",
+    "cat3": "Цементы и фиксация",
+    "price": "8407,13445",
+    "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-weiss-opak.jpg",
+    "series": "Tokuyama Estecem II Plus",
+    "specializations": [
+      "Ортопедия"
+    ],
+    "colors": [
+      "White Opaque"
+    ],
+    "consistency": "",
+    "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "hardness": "",
+    "curing": "",
+    "packaging": "",
+    "purposes": [
+      "Фиксация коронок",
+      "Фиксация вкладок",
+      "Фиксация накладок",
+      "Ремонт сколов",
+      "Фиксация виниров",
+      "Фиксация адгезивных мостовидных протезов"
+    ]
+  },
+  {
+    "id": 115,
+    "brand": "Tokuyama Dental",
+    "partNumber": 16343,
+    "name": "Tokuyama Estecem II Plus Kit",
+    "cat1": "Для врача-стоматолога и стоматологического кабинета",
+    "cat2": "Материалы",
+    "cat3": "Цементы и фиксация",
+    "price": "17217,3913",
+    "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-kit-universal.jpg",
+    "series": "Tokuyama Estecem II Plus",
+    "specializations": [
+      "Ортопедия"
+    ],
+    "colors": [],
+    "consistency": "",
+    "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "hardness": "",
+    "curing": "",
+    "packaging": "",
+    "purposes": [
+      "Фиксация коронок",
+      "Фиксация вкладок",
+      "Фиксация накладок",
+      "Ремонт сколов",
+      "Фиксация виниров",
+      "Фиксация адгезивных мостовидных протезов"
+    ]
+  },
+  {
+    "id": 116,
+    "brand": "Tokuyama Dental",
+    "partNumber": 18101,
+    "name": "Tokuyama Ionotite F",
+    "cat1": "Для врача-стоматолога и стоматологического кабинета",
+    "cat2": "Материалы",
+    "cat3": "Цементы и фиксация",
+    "price": "5913,657391",
+    "image": "https://www.dentalworldofficial.com/wp-content/uploads/2022/02/Untitled-design-2022-08-22T152202.419.jpg",
+    "series": "Tokuyama Ionotite F",
+    "specializations": [
+      "Ортопедия"
+    ],
+    "colors": [],
+    "consistency": "",
+    "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "hardness": "",
+    "curing": "",
+    "packaging": "",
+    "purposes": [
+      "Фиксация коронок",
+      "Фиксация вкладок",
+      "Фиксация накладок",
+      "Ремонт сколов",
+      "Фиксация виниров",
+      "Фиксация адгезивных мостовидных протезов"
+    ]
   }
 ]
