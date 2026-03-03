@@ -16,14 +16,15 @@ let currentSpecialization = 'all';
 
 const specificFiltersConfig = [
     { key: 'series', label: 'Серия', isArray: false },
-    { key: 'purposeAdhesive', label: 'Назначение', isArray: false },
     { key: 'colors', label: 'Цвет', isArray: true },
+    { key: 'appointment', label: 'Назначение', isArray: false },
     { key: 'consistency', label: 'Консистенция', isArray: false },
+    { key: 'viscosity', label: 'Вязкость', isArray: false },
     { key: 'curing', label: 'Отверждение', isArray: false },
     { key: 'materialType', label: 'Тип материала', isArray: false },
-    { key: 'selfEtching', label: 'Самопротравливающийся', isArray: false },
-    { key: 'hardness', label: 'Твёрдость', isArray: false }, // <-- НОВОЕ ПОЛЕ
     { key: 'packaging', label: 'Форма выпуска', isArray: false },
+    { key: 'selfEtching', label: 'Самопротравливающийся', isArray: false },
+    { key: 'hardness', label: 'Твёрдость', isArray: false },
     { key: 'purposes', label: 'Предназначение', isArray: true }
 ];
 
@@ -514,18 +515,20 @@ function openModal(productId) {
     const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
     const skuDisplay = p.partNumber ? `<div class="product-sku">Арт. ${p.partNumber}</div>` : '';
 
+    // Таблица характеристик
     let charsHtml = '';
     if (p.series) charsHtml += `<tr><th>Серия</th><td>${p.series}</td></tr>`;
-    if (p.purposeAdhesive) charsHtml += `<tr><th>Назначение</th><td>${p.purposeAdhesive}</td></tr>`;
     if (p.colors && p.colors.length > 0) charsHtml += `<tr><th>Цвет</th><td>${p.colors.join(', ')}</td></tr>`;
+    if (p.appointment) charsHtml += `<tr><th>Назначение</th><td>${p.appointment}</td></tr>`;
     if (p.consistency) charsHtml += `<tr><th>Консистенция</th><td>${p.consistency}</td></tr>`;
+    if (p.viscosity) charsHtml += `<tr><th>Вязкость</th><td>${p.viscosity}</td></tr>`;
     if (p.curing) charsHtml += `<tr><th>Отверждение</th><td>${p.curing}</td></tr>`;
     if (p.materialType) charsHtml += `<tr><th>Тип материала</th><td>${p.materialType}</td></tr>`;
-    if (p.selfEtching) charsHtml += `<tr><th>Самопротравливающийся</th><td>${p.selfEtching}</td></tr>`;
-    if (p.hardness) charsHtml += `<tr><th>Твёрдость</th><td>${p.hardness}</td></tr>`; // <-- НОВОЕ ПОЛЕ
     if (p.packaging) charsHtml += `<tr><th>Форма выпуска</th><td>${p.packaging}</td></tr>`;
+    if (p.selfEtching) charsHtml += `<tr><th>Самопротравливающийся</th><td>${p.selfEtching}</td></tr>`;
+    if (p.hardness) charsHtml += `<tr><th>Твёрдость</th><td>${p.hardness}</td></tr>`;
     if (p.purposes && p.purposes.length > 0) charsHtml += `<tr><th>Предназначение</th><td>${p.purposes.join('<br>')}</td></tr>`;
-    
+    if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
     if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 

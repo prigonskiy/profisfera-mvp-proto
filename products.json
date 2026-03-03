@@ -1,8 +1,8 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "brand": "Tokuyama Dental",
-    "partNumber": 14114,
+    "partNumber": "14114",
     "name": "Набор Tokuyama EE-Bond Intro Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -10,6 +10,10 @@
     "price": "5397,210261",
     "image": "https://www.henryschein.es/Products/adhesivo-ee-bond-reposicion-5ml-tokuyama-899-1520_1200x1200.jpg",
     "series": "Tokuyama EE-Bond",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -18,12 +22,20 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "для эмали и дентина",
+    "selfEtching": "Нет",
+    "hardness": "",
+    "purposes": [
+      "Используется при запечатывании каналов",
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов",
+      "Используется при запечатывания дентина"
+    ]
   },
   {
-    "id": 2,
+    "id": "2",
     "brand": "Tokuyama Dental",
-    "partNumber": 14701,
+    "partNumber": "14701",
     "name": "Набор Tokuyama One-Up Bond F Plus Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -31,6 +43,10 @@
     "price": "13537,48",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/slider13/Self-Etching-Adhesive-s1200-sq1200.jpeg",
     "series": "Tokuyama One-Up Bond F Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -39,12 +55,20 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "для эмали и дентина",
+    "selfEtching": "Да",
+    "hardness": "",
+    "purposes": [
+      "Используется при запечатывании каналов",
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов",
+      "Используется при запечатывания дентина"
+    ]
   },
   {
-    "id": 3,
+    "id": "3",
     "brand": "Tokuyama Dental",
-    "partNumber": 14906,
+    "partNumber": "14906",
     "name": "Набор Tokuyama Bond Force II Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -52,6 +76,10 @@
     "price": "6091,14",
     "image": "https://tokuyama-dental.eu/site/assets/files/2655/bond-force-ii-kit.jpg",
     "series": "Tokuyama Bond Force II",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -60,12 +88,18 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "для эмали и дентина",
+    "selfEtching": "Да",
+    "hardness": "",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов"
+    ]
   },
   {
-    "id": 4,
+    "id": "4",
     "brand": "Tokuyama Dental",
-    "partNumber": 14926,
+    "partNumber": "14926",
     "name": "Адгезив Tokuyama Bond Force II Refill",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -73,6 +107,10 @@
     "price": "6091,14",
     "image": "https://tokuyama-dental.eu/site/assets/files/2655/bond-force-ii-refill.jpg",
     "series": "Tokuyama Bond Force II",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -81,12 +119,18 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "для эмали и дентина",
+    "selfEtching": "Да",
+    "hardness": "",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов"
+    ]
   },
   {
-    "id": 5,
+    "id": "5",
     "brand": "Tokuyama Dental",
-    "partNumber": 14971,
+    "partNumber": "14971",
     "name": "Набор Tokuyama Bond Force II Pen Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -94,6 +138,10 @@
     "price": "7368,9",
     "image": "https://tokuyama-dental.eu/site/assets/files/2655/bond-force-ii-pen-intro-kit.jpg",
     "series": "Tokuyama Bond Force II",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -102,12 +150,18 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "для эмали и дентина",
+    "selfEtching": "Да",
+    "hardness": "",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов"
+    ]
   },
   {
-    "id": 6,
+    "id": "6",
     "brand": "Tokuyama Dental",
-    "partNumber": 15313,
+    "partNumber": "15313",
     "name": "Набор Tokuyama Universal Bond II Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -115,6 +169,10 @@
     "price": "10224,54783",
     "image": "https://tokuyama-dental.eu/site/assets/files/3589/universal-bond-kit.jpg",
     "series": "Tokuyama Universal Bond II",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -123,12 +181,20 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "для эмали и дентина",
+    "selfEtching": "Да",
+    "hardness": "",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов",
+      "Используется при фиксации непрямых реставраций",
+      "Используется при фиксации пластмассовых протезов"
+    ]
   },
   {
-    "id": 7,
+    "id": "7",
     "brand": "Tokuyama Dental",
-    "partNumber": 10933,
+    "partNumber": "10933",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Asteria Syringe Essential Kit (A1B, A2B, A3B, A3.5B, A4B, NE, OcE)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -136,34 +202,34 @@
     "price": "31815,84522",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze-essential-kit.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1B",
-      "A2B",
-      "A3B",
-      "A3.5B",
-      "A4B",
-      "NE",
-      "OcE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 8,
+    "id": "8",
     "brand": "Tokuyama Dental",
-    "partNumber": 10981,
+    "partNumber": "10981",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe A1B",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -171,28 +237,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1B"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 9,
+    "id": "9",
     "brand": "Tokuyama Dental",
-    "partNumber": 10982,
+    "partNumber": "10982",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe A2B",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -200,28 +272,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2B"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 10,
+    "id": "10",
     "brand": "Tokuyama Dental",
-    "partNumber": 10983,
+    "partNumber": "10983",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe A3B",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -229,28 +307,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3B"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 11,
+    "id": "11",
     "brand": "Tokuyama Dental",
-    "partNumber": 10984,
+    "partNumber": "10984",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe A3.5B",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -258,28 +342,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3.5B"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 12,
+    "id": "12",
     "brand": "Tokuyama Dental",
-    "partNumber": 10985,
+    "partNumber": "10985",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe A4B",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -287,28 +377,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A4B"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 13,
+    "id": "13",
     "brand": "Tokuyama Dental",
-    "partNumber": 10986,
+    "partNumber": "10986",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe B3B",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -316,28 +412,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B3B"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 14,
+    "id": "14",
     "brand": "Tokuyama Dental",
-    "partNumber": 10987,
+    "partNumber": "10987",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe BL",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -345,28 +447,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "BL"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 15,
+    "id": "15",
     "brand": "Tokuyama Dental",
-    "partNumber": 10988,
+    "partNumber": "10988",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe NE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -374,28 +482,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "NE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 16,
+    "id": "16",
     "brand": "Tokuyama Dental",
-    "partNumber": 10989,
+    "partNumber": "10989",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe WE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -403,28 +517,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "WE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 17,
+    "id": "17",
     "brand": "Tokuyama Dental",
-    "partNumber": 10990,
+    "partNumber": "10990",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe YE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -432,28 +552,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "YE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 18,
+    "id": "18",
     "brand": "Tokuyama Dental",
-    "partNumber": 10991,
+    "partNumber": "10991",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe TE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -461,28 +587,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "TE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 19,
+    "id": "19",
     "brand": "Tokuyama Dental",
-    "partNumber": 10992,
+    "partNumber": "10992",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Asteria Syringe OcE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -490,28 +622,34 @@
     "price": "4687,939826",
     "image": "https://tokuyama-dental.eu/site/assets/files/2646/estelite-asteria-spritze.jpg",
     "series": "Tokuyama Estelite Asteria",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OcE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 20,
+    "id": "20",
     "brand": "Tokuyama Dental",
-    "partNumber": 12710,
+    "partNumber": "12710",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Bulk Fill Flow Syringe U",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -519,28 +657,34 @@
     "price": "3628,79",
     "image": "https://tokuyama-dental.eu/site/assets/files/9691/estelite-bulk-fill-flow-spritze.jpg",
     "series": "Tokuyama Estelite Bulk Fill",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "U"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 21,
+    "id": "21",
     "brand": "Tokuyama Dental",
-    "partNumber": 12711,
+    "partNumber": "12711",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Bulk Fill Flow Syringe B1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -548,28 +692,34 @@
     "price": "3628,79",
     "image": "https://tokuyama-dental.eu/site/assets/files/9691/estelite-bulk-fill-flow-spritze.jpg",
     "series": "Tokuyama Estelite Bulk Fill",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B1"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 22,
+    "id": "22",
     "brand": "Tokuyama Dental",
-    "partNumber": 12712,
+    "partNumber": "12712",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Bulk Fill Flow Syringe A1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -577,28 +727,34 @@
     "price": "3628,79",
     "image": "https://tokuyama-dental.eu/site/assets/files/9691/estelite-bulk-fill-flow-spritze.jpg",
     "series": "Tokuyama Estelite Bulk Fill",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 23,
+    "id": "23",
     "brand": "Tokuyama Dental",
-    "partNumber": 12713,
+    "partNumber": "12713",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Bulk Fill Flow Syringe A2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -606,28 +762,34 @@
     "price": "3628,79",
     "image": "https://tokuyama-dental.eu/site/assets/files/9691/estelite-bulk-fill-flow-spritze.jpg",
     "series": "Tokuyama Estelite Bulk Fill",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 24,
+    "id": "24",
     "brand": "Tokuyama Dental",
-    "partNumber": 12714,
+    "partNumber": "12714",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Bulk Fill Flow Syringe A3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -635,28 +797,34 @@
     "price": "3628,79",
     "image": "https://tokuyama-dental.eu/site/assets/files/9691/estelite-bulk-fill-flow-spritze.jpg",
     "series": "Tokuyama Estelite Bulk Fill",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 25,
+    "id": "25",
     "brand": "Tokuyama Dental",
-    "partNumber": 10833,
+    "partNumber": "10833",
     "name": "Набор композитных красок Tokuyama Estelite Color Syringe Kit with 13 colours",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -664,37 +832,31 @@
     "price": "50620,51835",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-kit.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Clear",
-      "White",
-      "Blue",
-      "Yellow",
-      "Grey",
-      "Ochre",
-      "Dark Brown",
-      "Red",
-      "Lavender",
-      "Pink Opaque",
-      "High Chroma Opaque",
-      "Medium Chroma Opaque",
-      "Low Chroma Opaque"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 26,
+    "id": "26",
     "brand": "Tokuyama Dental",
-    "partNumber": 10881,
+    "partNumber": "10881",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Clear",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -702,25 +864,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-klar.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Clear"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 27,
+    "id": "27",
     "brand": "Tokuyama Dental",
-    "partNumber": 10882,
+    "partNumber": "10882",
     "name": "Композитная краска Tokuyama Estelite Color Syringe White",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -728,25 +896,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-weiss.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "White"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 28,
+    "id": "28",
     "brand": "Tokuyama Dental",
-    "partNumber": 10883,
+    "partNumber": "10883",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Blue",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -754,25 +928,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-blau.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Blue"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 29,
+    "id": "29",
     "brand": "Tokuyama Dental",
-    "partNumber": 10884,
+    "partNumber": "10884",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Yellow",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -780,25 +960,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-gelb.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Yellow"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 30,
+    "id": "30",
     "brand": "Tokuyama Dental",
-    "partNumber": 10885,
+    "partNumber": "10885",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Grey",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -806,25 +992,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-grau.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Grey"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 31,
+    "id": "31",
     "brand": "Tokuyama Dental",
-    "partNumber": 10886,
+    "partNumber": "10886",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Ochre",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -832,25 +1024,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-ocker.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Ochre"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 32,
+    "id": "32",
     "brand": "Tokuyama Dental",
-    "partNumber": 10887,
+    "partNumber": "10887",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Dark Brown",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -858,25 +1056,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-dunkelbraun.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Dark Brown"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 33,
+    "id": "33",
     "brand": "Tokuyama Dental",
-    "partNumber": 10888,
+    "partNumber": "10888",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Red",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -884,25 +1088,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-rot.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Red"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 34,
+    "id": "34",
     "brand": "Tokuyama Dental",
-    "partNumber": 10889,
+    "partNumber": "10889",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Lavender",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -910,25 +1120,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-lavendel.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Lavender"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 35,
+    "id": "35",
     "brand": "Tokuyama Dental",
-    "partNumber": 10890,
+    "partNumber": "10890",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Pink Opaque",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -936,25 +1152,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-pink-opak.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Pink Opaque"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 36,
+    "id": "36",
     "brand": "Tokuyama Dental",
-    "partNumber": 10891,
+    "partNumber": "10891",
     "name": "Композитная краска Tokuyama Estelite Color Syringe High Chroma Opaque",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -962,25 +1184,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-hochchromatisch-opak.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "High Chroma Opaque"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 37,
+    "id": "37",
     "brand": "Tokuyama Dental",
-    "partNumber": 10892,
+    "partNumber": "10892",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Medium Chroma Opaque",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -988,25 +1216,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-mittelchromatisch-opak.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Medium Chroma Opaque"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 38,
+    "id": "38",
     "brand": "Tokuyama Dental",
-    "partNumber": 10893,
+    "partNumber": "10893",
     "name": "Композитная краска Tokuyama Estelite Color Syringe Low Chroma Opaque",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1014,25 +1248,31 @@
     "price": "5127,012",
     "image": "https://tokuyama-dental.eu/site/assets/files/2649/estelite-color-spritze-niedrigchromatisch-opak.jpg",
     "series": "Tokuyama Estelite Color",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Low Chroma Opaque"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
       "Индивидуальная характеризация оттенка",
       "Маскировка обесцвеченных зубов"
     ]
   },
   {
-    "id": 39,
+    "id": "39",
     "brand": "Tokuyama Dental",
-    "partNumber": 12100,
+    "partNumber": "12100",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Flow Quick Syringe × 3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1040,35 +1280,39 @@
     "price": "8398,110217",
     "image": "https://el-dent.ru/UserFiles/Image/img7699_22768_big.jpg",
     "series": "Tokuyama Estelite Flow Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2",
-      "A3",
-      "A3.5"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
+      "Создание изолирующей прокладки",
+      "Восстановление краевого прилегания",
       "Создание культи",
       "Герметизация фиссур",
-      "Создание адгезивных мостовидных протезов",
-      "Починка композитных и керамических материалов",
-      "Фиксация назубных шин",
       "Создание объемных и нагруженных реставраций",
-      "Прямая реставрация жевательных зубов",
-      "Восстановление краевого прилегания",
-      "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Фиксация назубных шин",
+      "Починка композитных и керамических материалов",
+      "Создание адгезивных мостовидных протезов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 40,
+    "id": "40",
     "brand": "Tokuyama Dental",
-    "partNumber": 12915,
+    "partNumber": "12915",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Posterior Syringe PA1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1076,26 +1320,32 @@
     "price": "3833,28",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2021/10/ESTELITE-Posterior-2048x1075.webp",
     "series": "Tokuyama Estelite Posterior",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "PA1"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательной поверхности",
+      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 41,
+    "id": "41",
     "brand": "Tokuyama Dental",
-    "partNumber": 12916,
+    "partNumber": "12916",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Posterior Syringe PA2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1103,26 +1353,32 @@
     "price": "3833,28",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2021/10/ESTELITE-Posterior-2048x1075.webp",
     "series": "Tokuyama Estelite Posterior",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "PA2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательной поверхности",
+      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 42,
+    "id": "42",
     "brand": "Tokuyama Dental",
-    "partNumber": 12917,
+    "partNumber": "12917",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Posterior Syringe PA3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1130,26 +1386,32 @@
     "price": "3833,28",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2021/10/ESTELITE-Posterior-2048x1075.webp",
     "series": "Tokuyama Estelite Posterior",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "PA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательной поверхности",
+      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 43,
+    "id": "43",
     "brand": "Tokuyama Dental",
-    "partNumber": 12918,
+    "partNumber": "12918",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Posterior Syringe PCE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1157,26 +1419,32 @@
     "price": "3833,28",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2021/10/ESTELITE-Posterior-2048x1075.webp",
     "series": "Tokuyama Estelite Posterior",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "PCE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательной поверхности",
+      "Починка композитных и керамических материалов",
       "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 44,
+    "id": "44",
     "brand": "Tokuyama Dental",
-    "partNumber": 13095,
+    "partNumber": "13095",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Sigma Quick Syringe Kit of 3 (A2, A3, OA3)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1184,30 +1452,34 @@
     "price": "9516,65",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2",
-      "A3",
-      "OA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 45,
+    "id": "45",
     "brand": "Tokuyama Dental",
-    "partNumber": 13096,
+    "partNumber": "13096",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Sigma Quick Syringe Promo Kit of 6 (A2, A3, OA1, OA2, OA3, OPA2)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1215,33 +1487,34 @@
     "price": "19811,33",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2",
-      "A3",
-      "OA1",
-      "OA2",
-      "OA3",
-      "OPA2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 46,
+    "id": "46",
     "brand": "Tokuyama Dental",
-    "partNumber": 13099,
+    "partNumber": "13099",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Sigma Quick Syringe Kit of 3 III (A2, OA2, OA3)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1249,30 +1522,34 @@
     "price": "9516,65",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2",
-      "OA2",
-      "OA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 47,
+    "id": "47",
     "brand": "Tokuyama Dental",
-    "partNumber": 13100,
+    "partNumber": "13100",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Sigma Quick Syringe Kit of 3 II (OA1, OA2, OA3)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1280,30 +1557,34 @@
     "price": "9516,65",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OA1",
-      "OA2",
-      "OA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 48,
+    "id": "48",
     "brand": "Tokuyama Dental",
-    "partNumber": 13170,
+    "partNumber": "13170",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe A1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1311,28 +1592,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 49,
+    "id": "49",
     "brand": "Tokuyama Dental",
-    "partNumber": 13171,
+    "partNumber": "13171",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe A2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1340,28 +1627,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 50,
+    "id": "50",
     "brand": "Tokuyama Dental",
-    "partNumber": 13172,
+    "partNumber": "13172",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe A3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1369,28 +1662,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 51,
+    "id": "51",
     "brand": "Tokuyama Dental",
-    "partNumber": 13173,
+    "partNumber": "13173",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe A3,5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1398,28 +1697,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3.5"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 52,
+    "id": "52",
     "brand": "Tokuyama Dental",
-    "partNumber": 13174,
+    "partNumber": "13174",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe A4",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1427,28 +1732,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A4"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 53,
+    "id": "53",
     "brand": "Tokuyama Dental",
-    "partNumber": 13175,
+    "partNumber": "13175",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe A5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1456,28 +1767,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A5"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 54,
+    "id": "54",
     "brand": "Tokuyama Dental",
-    "partNumber": 13176,
+    "partNumber": "13176",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe B1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1485,28 +1802,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B1"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 55,
+    "id": "55",
     "brand": "Tokuyama Dental",
-    "partNumber": 13177,
+    "partNumber": "13177",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe B2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1514,28 +1837,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 56,
+    "id": "56",
     "brand": "Tokuyama Dental",
-    "partNumber": 13178,
+    "partNumber": "13178",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe B3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1543,28 +1872,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 57,
+    "id": "57",
     "brand": "Tokuyama Dental",
-    "partNumber": 13179,
+    "partNumber": "13179",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe B4",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1572,28 +1907,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B4"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 58,
+    "id": "58",
     "brand": "Tokuyama Dental",
-    "partNumber": 13180,
+    "partNumber": "13180",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe C1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1601,28 +1942,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "C1"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 59,
+    "id": "59",
     "brand": "Tokuyama Dental",
-    "partNumber": 13181,
+    "partNumber": "13181",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe C2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1630,28 +1977,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "C2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 60,
+    "id": "60",
     "brand": "Tokuyama Dental",
-    "partNumber": 13182,
+    "partNumber": "13182",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe C3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1659,28 +2012,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "C3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 61,
+    "id": "61",
     "brand": "Tokuyama Dental",
-    "partNumber": 13183,
+    "partNumber": "13183",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe OA1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1688,28 +2047,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OA1"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 62,
+    "id": "62",
     "brand": "Tokuyama Dental",
-    "partNumber": 13184,
+    "partNumber": "13184",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe OA2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1717,28 +2082,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OA2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 63,
+    "id": "63",
     "brand": "Tokuyama Dental",
-    "partNumber": 13185,
+    "partNumber": "13185",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe OA3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1746,28 +2117,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 64,
+    "id": "64",
     "brand": "Tokuyama Dental",
-    "partNumber": 13187,
+    "partNumber": "13187",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe OPA2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1775,28 +2152,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 65,
+    "id": "65",
     "brand": "Tokuyama Dental",
-    "partNumber": 13188,
+    "partNumber": "13188",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe CE (Inc.)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1804,28 +2187,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "CE (Inc.)"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 66,
+    "id": "66",
     "brand": "Tokuyama Dental",
-    "partNumber": 13189,
+    "partNumber": "13189",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe BW",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1833,28 +2222,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "BW"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 67,
+    "id": "67",
     "brand": "Tokuyama Dental",
-    "partNumber": 13190,
+    "partNumber": "13190",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Sigma Quick Syringe WE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1862,28 +2257,34 @@
     "price": "3415,83",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "WE"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 68,
+    "id": "68",
     "brand": "Tokuyama Dental",
-    "partNumber": 13201,
+    "partNumber": "13201",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Sigma Quick Syringe System Kit of 9 II (А1, А2, А3, А3.5, ОА3, ОРА2 + Flow Quick А2, А3, ОА3)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1891,33 +2292,34 @@
     "price": "34066,34",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2024/08/EsteliteSigmaQuick3.png",
     "series": "Tokuyama Estelite Sigma Quick",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1",
-      "A2",
-      "A3",
-      "A3.5",
-      "OA3",
-      "OPA2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 69,
+    "id": "69",
     "brand": "Tokuyama Dental",
-    "partNumber": 13850,
+    "partNumber": "13850",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe A1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1925,28 +2327,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 70,
+    "id": "70",
     "brand": "Tokuyama Dental",
-    "partNumber": 13851,
+    "partNumber": "13851",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe A2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1954,28 +2362,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 71,
+    "id": "71",
     "brand": "Tokuyama Dental",
-    "partNumber": 13852,
+    "partNumber": "13852",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe A3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -1983,28 +2397,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 72,
+    "id": "72",
     "brand": "Tokuyama Dental",
-    "partNumber": 13853,
+    "partNumber": "13853",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe A3.5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2012,28 +2432,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3.5"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 73,
+    "id": "73",
     "brand": "Tokuyama Dental",
-    "partNumber": 13854,
+    "partNumber": "13854",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe OPA2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2041,28 +2467,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA2"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 74,
+    "id": "74",
     "brand": "Tokuyama Dental",
-    "partNumber": 13855,
+    "partNumber": "13855",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe OPA3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2070,28 +2502,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 75,
+    "id": "75",
     "brand": "Tokuyama Dental",
-    "partNumber": 13856,
+    "partNumber": "13856",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow High Syringe OPA4",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2099,28 +2537,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-High-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow High",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA4"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 76,
+    "id": "76",
     "brand": "Tokuyama Dental",
-    "partNumber": 13857,
+    "partNumber": "13857",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe A1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2128,28 +2572,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 77,
+    "id": "77",
     "brand": "Tokuyama Dental",
-    "partNumber": 13858,
+    "partNumber": "13858",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe A2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2157,28 +2607,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 78,
+    "id": "78",
     "brand": "Tokuyama Dental",
-    "partNumber": 13859,
+    "partNumber": "13859",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe A3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2186,28 +2642,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 79,
+    "id": "79",
     "brand": "Tokuyama Dental",
-    "partNumber": 13860,
+    "partNumber": "13860",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe A3.5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2215,28 +2677,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3.5"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 80,
+    "id": "80",
     "brand": "Tokuyama Dental",
-    "partNumber": 13861,
+    "partNumber": "13861",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe A4",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2244,28 +2712,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A4"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 81,
+    "id": "81",
     "brand": "Tokuyama Dental",
-    "partNumber": 13862,
+    "partNumber": "13862",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe A5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2273,28 +2747,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A5"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 82,
+    "id": "82",
     "brand": "Tokuyama Dental",
-    "partNumber": 13863,
+    "partNumber": "13863",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe B3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2302,28 +2782,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 83,
+    "id": "83",
     "brand": "Tokuyama Dental",
-    "partNumber": 13864,
+    "partNumber": "13864",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe OPA2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2331,28 +2817,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA2"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 84,
+    "id": "84",
     "brand": "Tokuyama Dental",
-    "partNumber": 13865,
+    "partNumber": "13865",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe OPA3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2360,28 +2852,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 85,
+    "id": "85",
     "brand": "Tokuyama Dental",
-    "partNumber": 13866,
+    "partNumber": "13866",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe OPA4",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2389,28 +2887,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OPA4"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 86,
+    "id": "86",
     "brand": "Tokuyama Dental",
-    "partNumber": 13867,
+    "partNumber": "13867",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe CE",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2418,28 +2922,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "CE"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 87,
+    "id": "87",
     "brand": "Tokuyama Dental",
-    "partNumber": 13868,
+    "partNumber": "13868",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow Medium Syringe BW",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2447,28 +2957,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Medium-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow Medium",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "BW"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Средняя",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 88,
+    "id": "88",
     "brand": "Tokuyama Dental",
-    "partNumber": 13869,
+    "partNumber": "13869",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow SuperLow Syringe A1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2476,28 +2992,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Super-Low-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow SuperLow",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 89,
+    "id": "89",
     "brand": "Tokuyama Dental",
-    "partNumber": 13870,
+    "partNumber": "13870",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow SuperLow Syringe A2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2505,28 +3027,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Super-Low-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow SuperLow",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 90,
+    "id": "90",
     "brand": "Tokuyama Dental",
-    "partNumber": 13871,
+    "partNumber": "13871",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow SuperLow Syringe A3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2534,28 +3062,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Super-Low-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow SuperLow",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 91,
+    "id": "91",
     "brand": "Tokuyama Dental",
-    "partNumber": 13872,
+    "partNumber": "13872",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow SuperLow Syringe A3.5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2563,28 +3097,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Super-Low-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow SuperLow",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3.5"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 92,
+    "id": "92",
     "brand": "Tokuyama Dental",
-    "partNumber": 13873,
+    "partNumber": "13873",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow SuperLow Syringe A4",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2592,28 +3132,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Super-Low-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow SuperLow",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A4"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 93,
+    "id": "93",
     "brand": "Tokuyama Dental",
-    "partNumber": 13874,
+    "partNumber": "13874",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Universal Flow SuperLow Syringe A5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2621,28 +3167,34 @@
     "price": "3628,79",
     "image": "https://www.tokuyama-us.com/wp-content/uploads/2018/11/Estelite-Universal-Flow-Super-Low-Flow-Syringe-sq-1200.jpg",
     "series": "Tokuyama Estelite Universal Flow SuperLow",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A5"
-    ],
+    "colors": [],
     "consistency": "Текучая",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Низкая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Устранение поднутрений в полости",
-      "Прямая реставрация жевательных зубов",
       "Прямая реставрация передних зубов",
-      "Создание изолирующей прокладки"
+      "Создание изолирующей прокладки",
+      "Устранение поднутрений в полости",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 94,
+    "id": "94",
     "brand": "Tokuyama Dental",
-    "partNumber": 10114,
+    "partNumber": "10114",
     "name": "Композитный пломбировочный материал Tokuyama Omnichroma Syringe",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2650,28 +3202,34 @@
     "price": "3958,9",
     "image": "https://tokuyama-dental.eu/site/assets/files/6432/omnichroma-main.1000x675.png",
     "series": "Tokuyama Omnichroma",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "универсальный"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Закрытие диастем",
-      "Прямая реставрация жевательных зубов",
+      "Прямая реставрация передних зубов",
       "Создание композитных виниров",
-      "Прямая реставрация передних зубов"
+      "Закрытие диастем",
+      "Починка композитных и керамических материалов",
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 95,
+    "id": "95",
     "brand": "Tokuyama Dental",
-    "partNumber": 10115,
+    "partNumber": "10115",
     "name": "Композитный цветомаскирующий материал Tokuyama Omnichroma Syringe Blocker",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2679,26 +3237,34 @@
     "price": "3958,9",
     "image": "https://tokuyama-dental.eu/site/assets/files/6701/omnichroma-blocker-main.1000x790.png",
     "series": "Tokuyama Omnichroma",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
     "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Починка композитных и керамических материалов",
-      "Маскировка обесцвеченных зубов",
-      "Закрытие диастем",
+      "Создание изолирующей прокладки",
       "Создание композитных виниров",
-      "Создание изолирующей прокладки"
+      "Закрытие диастем",
+      "Маскировка обесцвеченных зубов",
+      "Починка композитных и керамических материалов"
     ]
   },
   {
-    "id": 96,
+    "id": "96",
     "brand": "Tokuyama Dental",
-    "partNumber": 11300,
+    "partNumber": "11300",
     "name": "Набор пломбировочных материалов Tokuyama Estelite Paste Syringe Intro Kit (A1, A2, A3< OA2, OA3)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2706,30 +3272,32 @@
     "price": "13681,47",
     "image": "https://www.protecodent.ru/upload/iblock/f9a/f9aa643ac6dfcf920d2d82ff5f817d93.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1",
-      "A2",
-      "A3",
-      "OA2",
-      "OA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 97,
+    "id": "97",
     "brand": "Tokuyama Dental",
-    "partNumber": 11344,
+    "partNumber": "11344",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe A1",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2737,26 +3305,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A1"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 98,
+    "id": "98",
     "brand": "Tokuyama Dental",
-    "partNumber": 11345,
+    "partNumber": "11345",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe A2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2764,26 +3338,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 99,
+    "id": "99",
     "brand": "Tokuyama Dental",
-    "partNumber": 11346,
+    "partNumber": "11346",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe A3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2791,26 +3371,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 100,
+    "id": "100",
     "brand": "Tokuyama Dental",
-    "partNumber": 11347,
+    "partNumber": "11347",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe A3.5",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2818,26 +3404,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "A3.5"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 101,
+    "id": "101",
     "brand": "Tokuyama Dental",
-    "partNumber": 11348,
+    "partNumber": "11348",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe B2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2845,26 +3437,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "B2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 102,
+    "id": "102",
     "brand": "Tokuyama Dental",
-    "partNumber": 11349,
+    "partNumber": "11349",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe C2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2872,26 +3470,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "C2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 103,
+    "id": "103",
     "brand": "Tokuyama Dental",
-    "partNumber": 11350,
+    "partNumber": "11350",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe Inc",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2899,26 +3503,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "Inc"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 104,
+    "id": "104",
     "brand": "Tokuyama Dental",
-    "partNumber": 11351,
+    "partNumber": "11351",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe OA2",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2926,26 +3536,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OA2"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 105,
+    "id": "105",
     "brand": "Tokuyama Dental",
-    "partNumber": 11352,
+    "partNumber": "11352",
     "name": "Композитный пломбировочный материал Tokuyama Estelite Paste Syringe OA3",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2953,26 +3569,32 @@
     "price": "1927,53",
     "image": "https://www.protecodent.ru/upload/iblock/0c5/0c5bf894e310f1ba4e8184c8b5f77f49.jpg",
     "series": "Tokuyama Palfique Estelite Paste",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
-    "colors": [
-      "OA3"
-    ],
+    "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
+    "curing": "",
     "materialType": "Композит",
-    "packaging": "Шприц",
+    "packaging": "",
+    "viscosity": "Высокая",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
+      "Прямая реставрация передних зубов",
       "Прямая реставрация жевательной поверхности",
-      "Прямая реставрация жевательных зубов",
-      "Прямая реставрация передних зубов"
+      "Прямая реставрация жевательных зубов"
     ]
   },
   {
-    "id": 106,
+    "id": "106",
     "brand": "Tokuyama Dental",
-    "partNumber": 20506,
+    "partNumber": "20506",
     "name": "Набор для перебазировки Tokuyama Rebase II Fast",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -2980,6 +3602,10 @@
     "price": "9026,6",
     "image": "https://tokuyama-dental.com/wp-content/uploads/2021/11/REBASE-II-2048x1075.webp",
     "series": "Tokuyama Rebase II",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -2988,12 +3614,16 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "Твёрдый",
     "purposes": []
   },
   {
-    "id": 107,
+    "id": "107",
     "brand": "Tokuyama Dental",
-    "partNumber": 23301,
+    "partNumber": "23301",
     "name": "Набор для перебазировки Tokuyama Sofreliner Tough S Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3001,6 +3631,10 @@
     "price": "16326,53",
     "image": "https://cdn.vanderven.de/publicshop-prod/media/a4/e3/06/1731595911/SOFRELINER_TOUGH_S.JPG",
     "series": "Tokuyama Sofreliner",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3009,12 +3643,16 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "Мягкий",
     "purposes": []
   },
   {
-    "id": 108,
+    "id": "108",
     "brand": "Tokuyama Dental",
-    "partNumber": 23351,
+    "partNumber": "23351",
     "name": "Набор для перебазировки Tokuyama Sofreliner Tough M Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3022,6 +3660,10 @@
     "price": "16326,53",
     "image": "https://cdn.vanderven.de/publicshop-prod/media/9a/f4/58/1731579522/SOFRELINER_TOUGH_M.JPG",
     "series": "Tokuyama Sofreliner",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3030,12 +3672,16 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "Мягкий",
     "purposes": []
   },
   {
-    "id": 109,
+    "id": "109",
     "brand": "Tokuyama Dental",
-    "partNumber": 10762,
+    "partNumber": "10762",
     "name": "Кисти для нанесения пломбировочных материалов Tokuyama Brush No.24",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Инструменты",
@@ -3043,6 +3689,10 @@
     "price": "5234,46",
     "image": "https://tokuyama-dental.eu/site/assets/files/2666/pinsel-nr-24.jpg",
     "series": "",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -3051,12 +3701,16 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": []
   },
   {
-    "id": 110,
+    "id": "110",
     "brand": "Tokuyama Dental",
-    "partNumber": 330114,
+    "partNumber": "330114",
     "name": "Стойка для композитов Tokuyama",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Оборудование",
@@ -3064,6 +3718,10 @@
     "price": "1600",
     "image": "https://w-stom.ru/upload/dev2fun.imagecompress/webp/iblock/72f/376ilx5zfbtj14h9u18lstkjuz5jwf11.webp",
     "series": "",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -3072,12 +3730,16 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": []
   },
   {
-    "id": 111,
+    "id": "111",
     "brand": "Tokuyama Dental",
-    "partNumber": 16362,
+    "partNumber": "16362",
     "name": "Цемент Tokuyama Estecem II Plus Paste (Universal)",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3085,6 +3747,10 @@
     "price": "8407,13445",
     "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-universal.jpg",
     "series": "Tokuyama Estecem II Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3093,12 +3759,23 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
+    "purposes": [
+      "Ремонт сколов",
+      "Фиксация коронок",
+      "Фиксация накладок",
+      "Фиксация вкладок",
+      "Фиксация адгезивных мостовидных протезов",
+      "Фиксация виниров"
+    ]
   },
   {
-    "id": 112,
+    "id": "112",
     "brand": "Tokuyama Dental",
-    "partNumber": 16363,
+    "partNumber": "16363",
     "name": "Цемент Tokuyama Estecem II Plus Clear",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3106,6 +3783,10 @@
     "price": "8407,13445",
     "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-klar.jpg",
     "series": "Tokuyama Estecem II Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3114,12 +3795,23 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
+    "purposes": [
+      "Ремонт сколов",
+      "Фиксация коронок",
+      "Фиксация накладок",
+      "Фиксация вкладок",
+      "Фиксация адгезивных мостовидных протезов",
+      "Фиксация виниров"
+    ]
   },
   {
-    "id": 113,
+    "id": "113",
     "brand": "Tokuyama Dental",
-    "partNumber": 16364,
+    "partNumber": "16364",
     "name": "Цемент Tokuyama Estecem II Plus Brown",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3127,6 +3819,10 @@
     "price": "8407,13445",
     "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-braun.jpg",
     "series": "Tokuyama Estecem II Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3135,12 +3831,23 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
+    "purposes": [
+      "Ремонт сколов",
+      "Фиксация коронок",
+      "Фиксация накладок",
+      "Фиксация вкладок",
+      "Фиксация адгезивных мостовидных протезов",
+      "Фиксация виниров"
+    ]
   },
   {
-    "id": 114,
+    "id": "114",
     "brand": "Tokuyama Dental",
-    "partNumber": 16365,
+    "partNumber": "16365",
     "name": "Цемент Tokuyama Estecem II Plus White Opaque",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3148,6 +3855,10 @@
     "price": "8407,13445",
     "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-paste-weiss-opak.jpg",
     "series": "Tokuyama Estecem II Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3156,12 +3867,23 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
+    "purposes": [
+      "Ремонт сколов",
+      "Фиксация коронок",
+      "Фиксация накладок",
+      "Фиксация вкладок",
+      "Фиксация адгезивных мостовидных протезов",
+      "Фиксация виниров"
+    ]
   },
   {
-    "id": 115,
+    "id": "115",
     "brand": "Tokuyama Dental",
-    "partNumber": 16343,
+    "partNumber": "16343",
     "name": "Набор для цементирования Tokuyama Estecem II Plus Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3169,6 +3891,10 @@
     "price": "17217,3913",
     "image": "https://tokuyama-dental.eu/site/assets/files/3590/estecem-ii-kit-universal.jpg",
     "series": "Tokuyama Estecem II Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3177,12 +3903,23 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
+    "purposes": [
+      "Ремонт сколов",
+      "Фиксация коронок",
+      "Фиксация накладок",
+      "Фиксация вкладок",
+      "Фиксация адгезивных мостовидных протезов",
+      "Фиксация виниров"
+    ]
   },
   {
-    "id": 116,
+    "id": "116",
     "brand": "Tokuyama Dental",
-    "partNumber": 18101,
+    "partNumber": "18101",
     "name": "Цемент Tokuyama Ionotite F",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3190,6 +3927,10 @@
     "price": "5913,657391",
     "image": "https://www.dentalworldofficial.com/wp-content/uploads/2022/02/Untitled-design-2022-08-22T152202.419.jpg",
     "series": "Tokuyama Ionotite F",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Ортопедия"
     ],
@@ -3198,12 +3939,23 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
-    "purposes": []
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
+    "purposes": [
+      "Ремонт сколов",
+      "Фиксация коронок",
+      "Фиксация накладок",
+      "Фиксация вкладок",
+      "Фиксация адгезивных мостовидных протезов",
+      "Фиксация виниров"
+    ]
   },
   {
-    "id": 117,
+    "id": "117",
     "brand": "Tokuyama Dental",
-    "partNumber": 15112,
+    "partNumber": "15112",
     "name": "Набор для снижения чувствительности дентина Tokuyama Shield Force Plus Kit",
     "cat1": "Для врача-стоматолога и стоматологического кабинета",
     "cat2": "Материалы",
@@ -3211,6 +3963,10 @@
     "price": "4730",
     "image": "https://tokuyama-dental.eu/site/assets/files/2663/shield-force-plus-kit.jpg",
     "series": "Tokuyama Shield Force Plus",
+    "groupId": "",
+    "groupFamilyName": "",
+    "deliveryType": "",
+    "optionName": "",
     "specializations": [
       "Терапия"
     ],
@@ -3219,9 +3975,13 @@
     "curing": "",
     "materialType": "",
     "packaging": "",
+    "viscosity": "",
+    "appointment": "",
+    "selfEtching": "",
+    "hardness": "",
     "purposes": [
-      "Используется при лечении обнаженного шеечного дентина",
       "Используется для снижения чувствительности зубов",
+      "Используется при лечении обнаженного шеечного дентина",
       "Используется при лечении гиперчувствительного дентина"
     ]
   }
