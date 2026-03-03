@@ -22,6 +22,7 @@ const specificFiltersConfig = [
     { key: 'curing', label: 'Отверждение', isArray: false },
     { key: 'materialType', label: 'Тип материала', isArray: false },
     { key: 'selfEtching', label: 'Самопротравливающийся', isArray: false },
+    { key: 'hardness', label: 'Твёрдость', isArray: false }, // <-- НОВОЕ ПОЛЕ
     { key: 'packaging', label: 'Форма выпуска', isArray: false },
     { key: 'purposes', label: 'Предназначение', isArray: true }
 ];
@@ -521,12 +522,11 @@ function openModal(productId) {
     if (p.curing) charsHtml += `<tr><th>Отверждение</th><td>${p.curing}</td></tr>`;
     if (p.materialType) charsHtml += `<tr><th>Тип материала</th><td>${p.materialType}</td></tr>`;
     if (p.selfEtching) charsHtml += `<tr><th>Самопротравливающийся</th><td>${p.selfEtching}</td></tr>`;
+    if (p.hardness) charsHtml += `<tr><th>Твёрдость</th><td>${p.hardness}</td></tr>`; // <-- НОВОЕ ПОЛЕ
     if (p.packaging) charsHtml += `<tr><th>Форма выпуска</th><td>${p.packaging}</td></tr>`;
     if (p.purposes && p.purposes.length > 0) charsHtml += `<tr><th>Предназначение</th><td>${p.purposes.join('<br>')}</td></tr>`;
     
-    // Вывод специализации в модалке
-    if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;   
-
+    if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 
     content.innerHTML = `
