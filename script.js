@@ -516,6 +516,7 @@ function openModal(productId) {
     const skuDisplay = p.partNumber ? `<div class="product-sku">Арт. ${p.partNumber}</div>` : '';
 
     // Таблица характеристик
+// Таблица характеристик
     let charsHtml = '';
     if (p.series) charsHtml += `<tr><th>Серия</th><td>${p.series}</td></tr>`;
     if (p.colors && p.colors.length > 0) charsHtml += `<tr><th>Цвет</th><td>${p.colors.join(', ')}</td></tr>`;
@@ -529,7 +530,7 @@ function openModal(productId) {
     if (p.hardness) charsHtml += `<tr><th>Твёрдость</th><td>${p.hardness}</td></tr>`;
     if (p.purposes && p.purposes.length > 0) charsHtml += `<tr><th>Предназначение</th><td>${p.purposes.join('<br>')}</td></tr>`;
     if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
-    if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
+
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 
     content.innerHTML = `
