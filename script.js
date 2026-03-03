@@ -1,4 +1,4 @@
-let products = [];
+let allProducts = []; // Исходная база
 let categoryTree = {};
 
 let currentCat1 = null;
@@ -11,42 +11,52 @@ let currentSort = 'default';
 let currentPage = 1;
 const itemsPerPage = 25; 
 
-// Настройка специфических фильтров (Порядок и тип)
+// ГЛОБАЛЬНЫЙ КОНТЕКСТ
+let currentSpecialization = 'all';
+
 const specificFiltersConfig = [
     { key: 'series', label: 'Серия', isArray: false },
+    { key: 'purposeAdhesive', label: 'Назначение', isArray: false },
     { key: 'colors', label: 'Цвет', isArray: true },
     { key: 'consistency', label: 'Консистенция', isArray: false },
     { key: 'curing', label: 'Отверждение', isArray: false },
     { key: 'materialType', label: 'Тип материала', isArray: false },
+    { key: 'selfEtching', label: 'Самопротравливающийся', isArray: false },
     { key: 'packaging', label: 'Форма выпуска', isArray: false },
     { key: 'purposes', label: 'Предназначение', isArray: true }
 ];
 
-// Объект для хранения выбранных специфических фильтров
 let activeSpecificFilters = {};
 
-// Инициализация
 document.addEventListener('DOMContentLoaded', () => {
-    // Сбрасываем выбранные фильтры
     specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
 
     fetch('products.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
-            products = data;
-            buildCategoryTree();
-            renderMenu();
+            allProducts = data;
             
-            const allBrands = [...new Set(products.map(p => p.brand).filter(b => b !== ''))].sort();
-            renderBrandFilters(allBrands);
-            
-            renderProducts();
+            // Собираем все доступные специализации из базы
+            populateSpecializations();
+
+            // Первичная отрисовка
+            applyGlobalContext();
         })
-        .catch(err => {
-            console.error('Ошибка загрузки products.json:', err);
-            document.getElementById('catalog-menu').innerHTML = 
-                '<div style="color:red; font-size:13px;">Ошибка загрузки. Нужен локальный сервер.</div>';
-        });
+        .catch(err => console.error('Ошибка загрузки products.json:', err));
+
+    // Слушатель на глобальный переключатель специализации
+    document.getElementById('global-specialization').addEventListener('change', (e) => {
+        currentSpecialization = e.target.value;
+        // При смене врача сбрасываем всё (категории, бренды, страницу)
+        currentCat1 = currentCat2 = currentCat3 = null;
+        selectedBrands = [];
+        searchQuery = '';
+        document.getElementById('search-input').value = '';
+        currentPage = 1;
+        specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
+        
+        applyGlobalContext();
+    });
 
     document.getElementById('sort-select').addEventListener('change', (e) => {
         currentSort = e.target.value;
@@ -60,14 +70,59 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts();
     });
     
-    // Закрытие модального окна по клику вне контента
     document.getElementById('product-modal').addEventListener('click', (e) => {
         if (e.target.id === 'product-modal') closeModal();
     });
 });
 
-function buildCategoryTree() {
-    products.forEach(p => {
+// Заполнение выпадающего списка специализаций
+function populateSpecializations() {
+    const specs = new Set();
+    allProducts.forEach(p => {
+        if (p.specializations) {
+            p.specializations.forEach(s => specs.add(s));
+        }
+    });
+
+    const select = document.getElementById('global-specialization');
+    [...specs].sort().forEach(spec => {
+        const opt = document.createElement('option');
+        opt.value = spec;
+        opt.textContent = spec;
+        select.appendChild(opt);
+    });
+}
+
+// Получение товаров, актуальных для выбранного врача
+function getGlobalProducts() {
+    if (currentSpecialization === 'all') return allProducts;
+    
+    return allProducts.filter(p => {
+        // Если специализация не указана - товар универсальный (показываем всем)
+        if (!p.specializations || p.specializations.length === 0) return true;
+        // Иначе проверяем, есть ли нужный врач в списке
+        return p.specializations.includes(currentSpecialization);
+    });
+}
+
+// Применение глобального контекста (перестройка всего сайта)
+function applyGlobalContext() {
+    const currentProducts = getGlobalProducts();
+    
+    buildCategoryTree(currentProducts);
+    renderMenu();
+    
+    const contextBrands = [...new Set(currentProducts.map(p => p.brand).filter(b => b !== ''))].sort();
+    renderBrandFilters(contextBrands, currentProducts);
+    
+    updateBreadcrumbs();
+    renderProducts();
+}
+
+// Строим дерево категорий только из доступных товаров
+function buildCategoryTree(currentProducts) {
+    categoryTree = {};
+    currentProducts.forEach(p => {
         if (!p.cat1 || !p.cat2) return;
         if (!categoryTree[p.cat1]) categoryTree[p.cat1] = {};
         if (!categoryTree[p.cat1][p.cat2]) categoryTree[p.cat1][p.cat2] = new Set();
@@ -75,13 +130,17 @@ function buildCategoryTree() {
     });
 }
 
-function renderBrandFilters(brands) {
+// Фильтр брендов: показываем только те бренды, которые есть в контексте
+function renderBrandFilters(brands, currentProducts) {
     const container = document.getElementById('brand-filters-container');
     container.innerHTML = '';
     
     if (brands.length === 0) return;
 
     brands.forEach(brand => {
+        // Подсчет товаров бренда в ТЕКУЩЕМ контексте
+        const count = currentProducts.filter(p => p.brand === brand).length;
+
         const label = document.createElement('label');
         const cb = document.createElement('input');
         cb.type = 'checkbox';
@@ -95,13 +154,15 @@ function renderBrandFilters(brands) {
         });
         
         label.appendChild(cb);
-        label.appendChild(document.createTextNode(' ' + brand));
+        label.insertAdjacentHTML('beforeend', ` ${brand} <span class="cat-count">(${count})</span>`);
         container.appendChild(label);
     });
 }
 
+// Подсчет товаров в меню (с учетом глобального контекста)
 function getProductCount(cat1, cat2, cat3) {
-    return products.filter(p => {
+    const currentProducts = getGlobalProducts();
+    return currentProducts.filter(p => {
         if (cat1 && p.cat1 !== cat1) return false;
         if (cat2 && p.cat2 !== cat2) return false;
         if (cat3 && p.cat3 !== cat3) return false;
@@ -198,10 +259,7 @@ function selectCategory(cat1, cat2, cat3) {
     currentCat2 = cat2;
     currentCat3 = cat3;
     currentPage = 1; 
-    
-    // Сбрасываем специфические фильтры при смене категории
     specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
-    
     updateBreadcrumbs();
     renderProducts();
 }
@@ -213,6 +271,80 @@ function updateBreadcrumbs() {
     if (currentCat2) html = `Каталог / ${currentCat1} / <span>${currentCat2}</span>`;
     if (currentCat3) html = `Каталог / ${currentCat1} / ${currentCat2} / <span>${currentCat3}</span>`;
     bc.innerHTML = html;
+}
+
+function isFinalCategorySelected() {
+    if (!currentCat1 || !currentCat2) return false;
+    const subcats3 = categoryTree[currentCat1][currentCat2];
+    if (subcats3 && subcats3.size > 0) {
+        return currentCat3 !== null && currentCat3 !== undefined;
+    }
+    return true;
+}
+
+function buildSpecificFilters(currentItems) {
+    const categoryFiltersBlock = document.getElementById('category-filters');
+    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
+    dynamicFiltersContainer.innerHTML = '';
+
+    let hasAnyFilter = false;
+
+    specificFiltersConfig.forEach(config => {
+        const valueCounts = {};
+        
+        currentItems.forEach(item => {
+            const val = item[config.key];
+            if (val) {
+                if (config.isArray) {
+                    val.forEach(v => { if(v) valueCounts[v] = (valueCounts[v] || 0) + 1; });
+                } else {
+                    valueCounts[val] = (valueCounts[val] || 0) + 1;
+                }
+            }
+        });
+
+        const uniqueValues = Object.keys(valueCounts);
+
+        if (uniqueValues.length > 0) {
+            hasAnyFilter = true;
+            const valuesArray = uniqueValues.sort();
+            
+            const groupDiv = document.createElement('div');
+            groupDiv.className = 'filter-group';
+            groupDiv.innerHTML = `<h4 style="margin-bottom: 8px; color: #34495e;">${config.label}</h4>`;
+            
+            const scrollDiv = document.createElement('div');
+            scrollDiv.className = 'scrollable-filters';
+            scrollDiv.style.maxHeight = '150px';
+
+            valuesArray.forEach(val => {
+                const count = valueCounts[val];
+                const label = document.createElement('label');
+                const cb = document.createElement('input');
+                cb.type = 'checkbox';
+                cb.value = val;
+                
+                if (activeSpecificFilters[config.key].includes(val)) cb.checked = true;
+
+                cb.addEventListener('change', (e) => {
+                    if (e.target.checked) activeSpecificFilters[config.key].push(val);
+                    else activeSpecificFilters[config.key] = activeSpecificFilters[config.key].filter(v => v !== val);
+                    currentPage = 1;
+                    renderProducts(false); 
+                });
+
+                label.appendChild(cb);
+                label.insertAdjacentHTML('beforeend', ` ${val} <span class="cat-count">(${count})</span>`);
+                scrollDiv.appendChild(label);
+            });
+
+            groupDiv.appendChild(scrollDiv);
+            dynamicFiltersContainer.appendChild(groupDiv);
+        }
+    });
+
+    if (hasAnyFilter) categoryFiltersBlock.style.display = 'block';
+    else categoryFiltersBlock.style.display = 'none';
 }
 
 function getNumericPrice(priceVal) {
@@ -233,104 +365,14 @@ function formatPrice(priceVal) {
     }).format(num);
 }
 
-// ---------------- ПОСТРОЕНИЕ СПЕЦИФИЧЕСКИХ ФИЛЬТРОВ ----------------
-function buildSpecificFilters(currentItems) {
-    const categoryFiltersBlock = document.getElementById('category-filters');
-    const dynamicFiltersContainer = document.getElementById('dynamic-filters');
-    dynamicFiltersContainer.innerHTML = '';
-
-    let hasAnyFilter = false;
-
-    specificFiltersConfig.forEach(config => {
-        const uniqueValues = new Set();
-        
-        // Собираем все уникальные значения для данного фильтра из текущего списка товаров
-        currentItems.forEach(item => {
-            const val = item[config.key];
-            if (val) {
-                if (config.isArray) {
-                    val.forEach(v => { if(v) uniqueValues.add(v); });
-                } else {
-                    uniqueValues.add(val);
-                }
-            }
-        });
-
-        if (uniqueValues.size > 0) {
-            hasAnyFilter = true;
-            const valuesArray = [...uniqueValues].sort();
-            
-            const groupDiv = document.createElement('div');
-            groupDiv.className = 'filter-group';
-            groupDiv.innerHTML = `<h4 style="margin-bottom: 8px; color: #34495e;">${config.label}</h4>`;
-            
-            const scrollDiv = document.createElement('div');
-            scrollDiv.className = 'scrollable-filters';
-            scrollDiv.style.maxHeight = '150px';
-
-            valuesArray.forEach(val => {
-                const label = document.createElement('label');
-                const cb = document.createElement('input');
-                cb.type = 'checkbox';
-                cb.value = val;
-                
-                // Проверяем, был ли чекбокс уже нажат
-                if (activeSpecificFilters[config.key].includes(val)) {
-                    cb.checked = true;
-                }
-
-                cb.addEventListener('change', (e) => {
-                    if (e.target.checked) {
-                        activeSpecificFilters[config.key].push(val);
-                    } else {
-                        activeSpecificFilters[config.key] = activeSpecificFilters[config.key].filter(v => v !== val);
-                    }
-                    currentPage = 1;
-                    renderProducts(false); // Вызываем рендер без перестроения самих фильтров
-                });
-
-                label.appendChild(cb);
-                label.appendChild(document.createTextNode(' ' + val));
-                scrollDiv.appendChild(label);
-            });
-
-            groupDiv.appendChild(scrollDiv);
-            dynamicFiltersContainer.appendChild(groupDiv);
-        }
-    });
-
-    if (hasAnyFilter) {
-        categoryFiltersBlock.style.display = 'block';
-    } else {
-        categoryFiltersBlock.style.display = 'none';
-    }
-}
-
-// Проверка: выбрана ли конечная категория
-function isFinalCategorySelected() {
-    // Если не выбран даже второй уровень - точно не конечная
-    if (!currentCat1 || !currentCat2) return false;
-    
-    // Смотрим, есть ли в этой ветке третий уровень
-    const subcats3 = categoryTree[currentCat1][currentCat2];
-    
-    if (subcats3 && subcats3.size > 0) {
-        // Если третий уровень есть, значит конечной категорией считается он
-        return currentCat3 !== null && currentCat3 !== undefined;
-    }
-    
-    // Если третьего уровня нет, значит второй уровень и есть конечный
-    return true;
-}
-
-// Рендер товаров
-// rebuildFilters = true означает, что мы перестраиваем панель слева (при смене категории)
 function renderProducts(rebuildFilters = true) {
     const grid = document.getElementById('products-grid');
     grid.innerHTML = '';
 
-    // Базовая фильтрация (Категория, Бренд, Поиск)
-    let filteredBase = products.filter(p => {
+    // База товаров теперь берется из глобального контекста!
+    const contextProducts = getGlobalProducts();
+
+    let filteredBase = contextProducts.filter(p => {
         if (currentCat1 && p.cat1 !== currentCat1) return false;
         if (currentCat2 && p.cat2 !== currentCat2) return false;
         if (currentCat3 && p.cat3 !== currentCat3) return false;
@@ -345,26 +387,21 @@ function renderProducts(rebuildFilters = true) {
 
     if (searchQuery !== '') renderMenu();
 
-    // НОВОЕ: Строим специфические фильтры ТОЛЬКО если выбрана конечная категория
     if (rebuildFilters) {
-        if (isFinalCategorySelected()) {
-            buildSpecificFilters(filteredBase);
-        } else {
-            // Если категория не конечная - скрываем блок и принудительно очищаем выбор
+        if (isFinalCategorySelected()) buildSpecificFilters(filteredBase);
+        else {
             document.getElementById('category-filters').style.display = 'none';
             document.getElementById('dynamic-filters').innerHTML = '';
             specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
         }
     }
 
-    // Применяем специфические фильтры
     let fullyFiltered = filteredBase.filter(p => {
         for (let config of specificFiltersConfig) {
             const activeValues = activeSpecificFilters[config.key];
             if (activeValues && activeValues.length > 0) {
                 const pVal = p[config.key];
                 if (!pVal) return false; 
-
                 if (config.isArray) {
                     const hasMatch = activeValues.some(val => pVal.includes(val));
                     if (!hasMatch) return false;
@@ -376,22 +413,15 @@ function renderProducts(rebuildFilters = true) {
         return true;
     });
 
-    // Сортировка
-    if (currentSort === 'alpha-asc') {
-        fullyFiltered.sort((a, b) => a.name.localeCompare(b.name));
-    } else if (currentSort === 'alpha-desc') {
-        fullyFiltered.sort((a, b) => b.name.localeCompare(a.name));
-    } else if (currentSort === 'price-asc') {
-        fullyFiltered.sort((a, b) => getNumericPrice(a.price) - getNumericPrice(b.price));
-    } else if (currentSort === 'price-desc') {
-        fullyFiltered.sort((a, b) => {
-            let pA = getNumericPrice(a.price) === Infinity ? 0 : getNumericPrice(a.price);
-            let pB = getNumericPrice(b.price) === Infinity ? 0 : getNumericPrice(b.price);
-            return pB - pA;
-        });
-    }
+    if (currentSort === 'alpha-asc') fullyFiltered.sort((a, b) => a.name.localeCompare(b.name));
+    else if (currentSort === 'alpha-desc') fullyFiltered.sort((a, b) => b.name.localeCompare(a.name));
+    else if (currentSort === 'price-asc') fullyFiltered.sort((a, b) => getNumericPrice(a.price) - getNumericPrice(b.price));
+    else if (currentSort === 'price-desc') fullyFiltered.sort((a, b) => {
+        let pA = getNumericPrice(a.price) === Infinity ? 0 : getNumericPrice(a.price);
+        let pB = getNumericPrice(b.price) === Infinity ? 0 : getNumericPrice(b.price);
+        return pB - pA;
+    });
 
-    // Пагинация
     const totalItems = fullyFiltered.length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     
@@ -404,18 +434,15 @@ function renderProducts(rebuildFilters = true) {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const paginatedItems = fullyFiltered.slice(startIndex, startIndex + itemsPerPage);
 
-    // Отрисовка
     paginatedItems.forEach(p => {
         const card = document.createElement('div');
         card.className = 'product-card';
-        // Клик по карточке открывает модалку!
         card.addEventListener('click', () => openModal(p.id));
         
         const formattedPrice = formatPrice(p.price);
         const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
         const skuHtml = p.partNumber ? `<div class="product-sku">Арт. ${p.partNumber}</div>` : '';
 
-        // Внутрь кнопки корзины добавляем stopPropagation, чтобы не открывалась модалка при добавлении в корзину
         card.innerHTML = `
             <img src="${p.image || 'https://via.placeholder.com/250x200?text=Нет+фото'}" alt="${p.name}" class="product-image" onerror="this.src='https://via.placeholder.com/250x200?text=Нет+фото'">
             <div class="product-brand">${p.brand || 'Без бренда'}</div>
@@ -475,10 +502,8 @@ function renderPagination(totalPages, current) {
     container.appendChild(nextBtn);
 }
 
-
-// ---------------- ЛОГИКА МОДАЛЬНОГО ОКНА ----------------
 function openModal(productId) {
-    const p = products.find(item => item.id === productId);
+    const p = allProducts.find(item => item.id === productId);
     if (!p) return;
 
     const modal = document.getElementById('product-modal');
@@ -488,15 +513,19 @@ function openModal(productId) {
     const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
     const skuDisplay = p.partNumber ? `<div class="product-sku">Арт. ${p.partNumber}</div>` : '';
 
-    // Сборка таблицы характеристик
     let charsHtml = '';
     if (p.series) charsHtml += `<tr><th>Серия</th><td>${p.series}</td></tr>`;
+    if (p.purposeAdhesive) charsHtml += `<tr><th>Назначение</th><td>${p.purposeAdhesive}</td></tr>`;
     if (p.colors && p.colors.length > 0) charsHtml += `<tr><th>Цвет</th><td>${p.colors.join(', ')}</td></tr>`;
     if (p.consistency) charsHtml += `<tr><th>Консистенция</th><td>${p.consistency}</td></tr>`;
     if (p.curing) charsHtml += `<tr><th>Отверждение</th><td>${p.curing}</td></tr>`;
     if (p.materialType) charsHtml += `<tr><th>Тип материала</th><td>${p.materialType}</td></tr>`;
+    if (p.selfEtching) charsHtml += `<tr><th>Самопротравливающийся</th><td>${p.selfEtching}</td></tr>`;
     if (p.packaging) charsHtml += `<tr><th>Форма выпуска</th><td>${p.packaging}</td></tr>`;
     if (p.purposes && p.purposes.length > 0) charsHtml += `<tr><th>Предназначение</th><td>${p.purposes.join('<br>')}</td></tr>`;
+    
+    // Вывод специализации в модалке
+    if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;   
 
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 

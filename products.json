@@ -15,10 +15,16 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
-    "packaging": "",
-    "purposes": []
+    "purposeAdhesive": "для эмали и дентина",
+    "selfEtching": "Нет",
+    "curing": "Световое",
+    "packaging": "Флакон",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов",
+      "Используется при запечатывания дентина",
+      "Используется при запечатывании каналов"
+    ]
   },
   {
     "id": 2,
@@ -36,10 +42,16 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
-    "packaging": "",
-    "purposes": []
+    "purposeAdhesive": "для эмали и дентина",
+    "selfEtching": "Да",
+    "curing": "Световое",
+    "packaging": "Флакон",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов",
+      "Используется при запечатывания дентина",
+      "Используется при запечатывании каналов"
+    ]
   },
   {
     "id": 3,
@@ -57,10 +69,14 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
-    "packaging": "",
-    "purposes": []
+    "purposeAdhesive": "для эмали и дентина",
+    "selfEtching": "Да",
+    "curing": "Световое",
+    "packaging": "Флакон",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов"
+    ]
   },
   {
     "id": 4,
@@ -78,10 +94,14 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
-    "packaging": "",
-    "purposes": []
+    "purposeAdhesive": "для эмали и дентина",
+    "selfEtching": "Да",
+    "curing": "Световое",
+    "packaging": "Флакон",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов"
+    ]
   },
   {
     "id": 5,
@@ -99,10 +119,14 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
-    "packaging": "",
-    "purposes": []
+    "purposeAdhesive": "для эмали и дентина",
+    "selfEtching": "Да",
+    "curing": "Световое",
+    "packaging": "Ручка-дозатор",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов"
+    ]
   },
   {
     "id": 6,
@@ -120,10 +144,16 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
-    "packaging": "",
-    "purposes": []
+    "purposeAdhesive": "для эмали и дентина",
+    "selfEtching": "Да",
+    "curing": "Самоотверждение",
+    "packaging": "Флакон",
+    "purposes": [
+      "Используется при прямой реставрации с помощью светоотверждаемых материалов",
+      "Используется при фиксации непрямых реставраций",
+      "Используется при фиксации пластмассовых протезов"
+    ]
   },
   {
     "id": 7,
@@ -149,8 +179,10 @@
       "OcE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -178,8 +210,10 @@
       "A1B"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -207,8 +241,10 @@
       "A2B"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -236,8 +272,10 @@
       "A3B"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -265,8 +303,10 @@
       "A3.5B"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -294,8 +334,10 @@
       "A4B"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -323,8 +365,10 @@
       "B3B"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -352,8 +396,10 @@
       "BL"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -381,8 +427,10 @@
       "NE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -410,8 +458,10 @@
       "WE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -439,8 +489,10 @@
       "YE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -468,8 +520,10 @@
       "TE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -497,8 +551,10 @@
       "OcE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -526,8 +582,10 @@
       "U"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -555,8 +613,10 @@
       "B1"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -584,8 +644,10 @@
       "A1"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -613,8 +675,10 @@
       "A2"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -642,8 +706,10 @@
       "A3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -683,8 +749,10 @@
       "Low Chroma Opaque"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -709,8 +777,10 @@
       "Clear"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -735,8 +805,10 @@
       "White"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -761,8 +833,10 @@
       "Blue"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -787,8 +861,10 @@
       "Yellow"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -813,8 +889,10 @@
       "Grey"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -839,8 +917,10 @@
       "Ochre"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -865,8 +945,10 @@
       "Dark Brown"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -891,8 +973,10 @@
       "Red"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -917,8 +1001,10 @@
       "Lavender"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -943,8 +1029,10 @@
       "Pink Opaque"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -969,8 +1057,10 @@
       "High Chroma Opaque"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -995,8 +1085,10 @@
       "Medium Chroma Opaque"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -1021,8 +1113,10 @@
       "Low Chroma Opaque"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Индивидуальная характеризация оттенка",
@@ -1049,8 +1143,10 @@
       "A3.5"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1083,8 +1179,10 @@
       "PA1"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация жевательных зубов",
@@ -1110,8 +1208,10 @@
       "PA2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация жевательных зубов",
@@ -1137,8 +1237,10 @@
       "PA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация жевательных зубов",
@@ -1164,8 +1266,10 @@
       "PCE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация жевательных зубов",
@@ -1193,8 +1297,10 @@
       "OA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1227,8 +1333,10 @@
       "OPA2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1258,8 +1366,10 @@
       "OA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1289,8 +1399,10 @@
       "OA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1318,8 +1430,10 @@
       "A1"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1347,8 +1461,10 @@
       "A2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1376,8 +1492,10 @@
       "A3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1405,8 +1523,10 @@
       "A3.5"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1434,8 +1554,10 @@
       "A4"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1463,8 +1585,10 @@
       "A5"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1492,8 +1616,10 @@
       "B1"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1521,8 +1647,10 @@
       "B2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1550,8 +1678,10 @@
       "B3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1579,8 +1709,10 @@
       "B4"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1608,8 +1740,10 @@
       "C1"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1637,8 +1771,10 @@
       "C2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1666,8 +1802,10 @@
       "C3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1695,8 +1833,10 @@
       "OA1"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1724,8 +1864,10 @@
       "OA2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1753,8 +1895,10 @@
       "OA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1782,8 +1926,10 @@
       "OPA2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1811,8 +1957,10 @@
       "CE (Inc.)"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1840,8 +1988,10 @@
       "BW"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1869,8 +2019,10 @@
       "WE"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1903,8 +2055,10 @@
       "OPA2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1932,8 +2086,10 @@
       "A1"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1961,8 +2117,10 @@
       "A2"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -1990,8 +2148,10 @@
       "A3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2019,8 +2179,10 @@
       "A3.5"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2048,8 +2210,10 @@
       "OPA2"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2077,8 +2241,10 @@
       "OPA3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2106,8 +2272,10 @@
       "OPA4"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2135,8 +2303,10 @@
       "A1"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2164,8 +2334,10 @@
       "A2"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2193,8 +2365,10 @@
       "A3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2222,8 +2396,10 @@
       "A3.5"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2251,8 +2427,10 @@
       "A4"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2280,8 +2458,10 @@
       "A5"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2309,8 +2489,10 @@
       "B3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2338,8 +2520,10 @@
       "OPA2"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2367,8 +2551,10 @@
       "OPA3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2396,8 +2582,10 @@
       "OPA4"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2425,8 +2613,10 @@
       "CE"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2454,8 +2644,10 @@
       "BW"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2483,8 +2675,10 @@
       "A1"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2512,8 +2706,10 @@
       "A2"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2541,8 +2737,10 @@
       "A3"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2570,8 +2768,10 @@
       "A3.5"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2599,8 +2799,10 @@
       "A4"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2628,8 +2830,10 @@
       "A5"
     ],
     "consistency": "Текучая",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2657,8 +2861,10 @@
       "универсальный"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2684,8 +2890,10 @@
     ],
     "colors": [],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Закрытие диастем",
@@ -2717,8 +2925,10 @@
       "OA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2744,8 +2954,10 @@
       "A1"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2771,8 +2983,10 @@
       "A2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2798,8 +3012,10 @@
       "A3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2825,8 +3041,10 @@
       "A3.5"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2852,8 +3070,10 @@
       "B2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2879,8 +3099,10 @@
       "C2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2906,8 +3128,10 @@
       "Inc"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2933,8 +3157,10 @@
       "OA2"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2960,8 +3186,10 @@
       "OA3"
     ],
     "consistency": "Пастообразная",
-    "curing": "Световое",
     "materialType": "Композит",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "Световое",
     "packaging": "Шприц",
     "purposes": [
       "Прямая реставрация передних зубов",
@@ -2985,8 +3213,10 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "",
     "packaging": "",
     "purposes": []
   },
@@ -3006,8 +3236,10 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "",
     "packaging": "",
     "purposes": []
   },
@@ -3027,8 +3259,10 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "",
     "packaging": "",
     "purposes": []
   },
@@ -3048,8 +3282,10 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "",
     "packaging": "",
     "purposes": []
   },
@@ -3069,8 +3305,10 @@
     ],
     "colors": [],
     "consistency": "",
-    "curing": "",
     "materialType": "",
+    "purposeAdhesive": "",
+    "selfEtching": "",
+    "curing": "",
     "packaging": "",
     "purposes": []
   }
