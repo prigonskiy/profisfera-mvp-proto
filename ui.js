@@ -439,7 +439,7 @@ export function renderSuggestions(query) {
     box.style.display = 'block';
 }
 
-function openModal(productId) {
+export function openModal(productId) {
     const p = state.allProducts.find(item => String(item.id) === String(productId));
     if (!p) return;
 
@@ -465,6 +465,46 @@ function openModal(productId) {
     if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 
+    // --- ЛОГИКА ДВУХУРОВНЕВОЙ ГРУППИРОВКИ ---
+    let variationsHtml = '';
+    
+    if (p.groupId) {
+        // Находим все товары с таким же groupId в глобальном стейте
+        const siblings = state.allProducts.filter(item => item.groupId === p.groupId);
+        
+        if (siblings.length > 1) {
+            // Группируем по первому уровню (Тип поставки)
+            const groupsByDelivery = {};
+            siblings.forEach(s => {
+                const delivery = s.deliveryType || 'Стандартная поставка';
+                if (!groupsByDelivery[delivery]) groupsByDelivery[delivery] = [];
+                groupsByDelivery[delivery].push(s);
+            });
+
+            const familyNameDisplay = p.groupFamilyName ? `(${p.groupFamilyName})` : '';
+            variationsHtml += `<div class="variations-block"><h3>Другие варианты ${familyNameDisplay}:</h3>`;
+            
+            for (const delivery in groupsByDelivery) {
+                variationsHtml += `
+                    <div class="variation-group">
+                        <div class="variation-pack">${delivery}</div>
+                        <div class="variation-items">
+                `;
+                
+                groupsByDelivery[delivery].forEach(s => {
+                    const isActive = s.id === p.id ? 'active' : '';
+                    // Подставляем название опции, если нет - то артикул
+                    const btnLabel = s.optionName ? s.optionName : `Арт. ${s.partNumber || s.id}`; 
+                    
+                    variationsHtml += `<button class="variation-btn ${isActive}" onclick="openModal('${s.id}')">${btnLabel}</button>`;
+                });
+                
+                variationsHtml += `</div></div>`;
+            }
+            variationsHtml += `</div>`;
+        }
+    }
+
     content.innerHTML = `
         <div class="modal-grid">
             <div class="modal-image-col">
@@ -474,7 +514,11 @@ function openModal(productId) {
                 <div class="product-brand" style="margin-bottom:10px;">${p.brand || 'Без бренда'}</div>
                 ${skuDisplay}
                 <h2 class="modal-title">${p.name}</h2>
+                
+                ${variationsHtml}
+                
                 ${charsTable}
+                
                 <div class="modal-sticky-bottom">
                     <div class="modal-price">${priceDisplay}</div>
                     <button class="btn-cart" onclick="addToCart(this)">Добавить в корзину</button>
@@ -482,6 +526,7 @@ function openModal(productId) {
             </div>
         </div>
     `;
+
     modal.style.display = 'flex';
 }
 
