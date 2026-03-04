@@ -372,15 +372,17 @@ export function renderProducts(rebuildFilters = true) {
         const formattedPrice = formatPrice(p.price);
         const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
         const skuHtml = p.partNumber ? `<div class="product-sku" onclick="event.stopPropagation(); copySku('${p.partNumber}', this)" title="Нажмите, чтобы скопировать">Арт. ${p.partNumber}</div>` : '';
-
         const productUrl = `?product=${p.id}`;
+        
+        // НОВОЕ: Готовим краткое описание
+        const shortDescHtml = p.shortDesc ? `<div class="product-short-desc">${p.shortDesc}</div>` : '';
 
         card.innerHTML = `
             <img src="${p.image || 'https://via.placeholder.com/250x200?text=Нет+фото'}" alt="${p.name}" class="product-image" onerror="this.src='https://via.placeholder.com/250x200?text=Нет+фото'">
             <div class="product-brand">${p.brand || 'Без бренда'}</div>
             ${skuHtml}
             <a href="${productUrl}" class="product-name" onclick="event.preventDefault(); openModal('${p.id}')">${p.name}</a>
-            <div style="flex-grow:1"></div>
+            ${shortDescHtml} <div style="flex-grow:1"></div>
             <div class="product-price">${priceDisplay}</div>
             <button class="btn-cart" onclick="event.stopPropagation(); addToCart(this)">В корзину</button>
         `;
@@ -525,6 +527,13 @@ export function openModal(productId, updateUrl = true) {
             variationsHtml += `</div></div>`; // Закрываем variation-content и variations-block
         }
     }
+const modalShortDesc = p.shortDesc ? `<div style="font-size: 14px; color: #7f8c8d; margin-bottom: 15px; line-height: 1.5;">${p.shortDesc}</div>` : '';
+    const modalFullDesc = p.fullDesc ? `
+        <div class="product-full-desc">
+            <h3>Описание</h3>
+            <div>${p.fullDesc}</div>
+        </div>
+    ` : '';
 
     content.innerHTML = `
         <div class="modal-grid">
@@ -536,11 +545,10 @@ export function openModal(productId, updateUrl = true) {
                 ${skuDisplay}
                 <h2 class="modal-title">${p.name}</h2>
                 
-                ${variationsHtml}
-                
+                ${modalShortDesc} ${variationsHtml}
                 ${charsTable}
                 
-                <div class="modal-sticky-bottom">
+                ${modalFullDesc} <div class="modal-sticky-bottom">
                     <div class="modal-price">${priceDisplay}</div>
                     <button class="btn-cart" onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
