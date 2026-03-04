@@ -8,6 +8,7 @@ window.toggleMobileMenu = toggleMobileMenu;
 window.resetAllFilters = resetAllFilters;
 window.openModal = openModal;
 window.closeModal = closeModal;
+window.switchVariationTab = switchVariationTab;
 
 // --- УТИЛИТЫ UI ---
 export function formatPrice(priceVal) {
@@ -465,11 +466,10 @@ export function openModal(productId) {
     if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 
-    // --- ЛОГИКА ДВУХУРОВНЕВОЙ ГРУППИРОВКИ ---
+    // --- ЛОГИКА ДВУХУРОВНЕВОЙ ГРУППИРОВКИ (С ТАБАМИ) ---
     let variationsHtml = '';
     
     if (p.groupId) {
-        // Находим все товары с таким же groupId в глобальном стейте
         const siblings = state.allProducts.filter(item => item.groupId === p.groupId);
         
         if (siblings.length > 1) {
@@ -484,27 +484,37 @@ export function openModal(productId) {
             const familyNameDisplay = p.groupFamilyName ? `(${p.groupFamilyName})` : '';
             variationsHtml += `<div class="variations-block"><h3>Другие варианты ${familyNameDisplay}:</h3>`;
             
-            for (const delivery in groupsByDelivery) {
-                variationsHtml += `
-                    <div class="variation-group">
-                        <div class="variation-pack">${delivery}</div>
-                        <div class="variation-items">
-                `;
+            const deliveryKeys = Object.keys(groupsByDelivery);
+            
+            // 1 УРОВЕНЬ: Строим вкладки (Табы)
+            variationsHtml += `<div class="variation-tabs">`;
+            deliveryKeys.forEach((delivery, idx) => {
+                // Если тип поставки совпадает с текущим товаром - делаем вкладку активной
+                const isActive = (delivery === (p.deliveryType || 'Стандартная поставка')) ? 'active' : '';
+                variationsHtml += `<button class="var-tab-btn ${isActive}" onclick="switchVariationTab(${idx})">${delivery}</button>`;
+            });
+            variationsHtml += `</div>`;
+
+            // 2 УРОВЕНЬ: Строим блоки с опциями
+            variationsHtml += `<div class="variation-content">`;
+            deliveryKeys.forEach((delivery, idx) => {
+                const isActive = (delivery === (p.deliveryType || 'Стандартная поставка'));
+                const displayStyle = isActive ? 'display: flex;' : 'display: none;';
+                
+                variationsHtml += `<div class="variation-options-group" id="var-group-${idx}" style="${displayStyle} gap: 8px; flex-wrap: wrap;">`;
                 
                 groupsByDelivery[delivery].forEach(s => {
-                    const isActive = s.id === p.id ? 'active' : '';
-                    // Подставляем название опции, если нет - то артикул
+                    const isCurrentProduct = s.id === p.id ? 'active' : '';
                     const btnLabel = s.optionName ? s.optionName : `Арт. ${s.partNumber || s.id}`; 
                     
-                    variationsHtml += `<button class="variation-btn ${isActive}" onclick="openModal('${s.id}')">${btnLabel}</button>`;
+                    variationsHtml += `<button class="variation-btn ${isCurrentProduct}" onclick="openModal('${s.id}')">${btnLabel}</button>`;
                 });
-                
-                variationsHtml += `</div></div>`;
-            }
-            variationsHtml += `</div>`;
+                variationsHtml += `</div>`;
+            });
+            variationsHtml += `</div></div>`; // Закрываем variation-content и variations-block
         }
     }
-
+    
     content.innerHTML = `
         <div class="modal-grid">
             <div class="modal-image-col">
@@ -528,6 +538,22 @@ export function openModal(productId) {
     `;
 
     modal.style.display = 'flex';
+}
+
+export function switchVariationTab(activeIndex) {
+    // Переключаем активный класс у вкладок
+    const tabs = document.querySelectorAll('.var-tab-btn');
+    tabs.forEach((tab, idx) => {
+        if (idx === activeIndex) tab.classList.add('active');
+        else tab.classList.remove('active');
+    });
+
+    // Переключаем видимость блоков с кнопками опций
+    const groups = document.querySelectorAll('.variation-options-group');
+    groups.forEach((group, idx) => {
+        if (idx === activeIndex) group.style.display = 'flex';
+        else group.style.display = 'none';
+    });
 }
 
 export function closeModal() {

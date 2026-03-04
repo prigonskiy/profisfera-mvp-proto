@@ -389,22 +389,37 @@ header {
     .container { padding: 15px; }
 }
 
-/* --- Блок вариаций (Группировка по ID) --- */
+/* --- Блок вариаций (Двухуровневая группировка с табами) --- */
 .variations-block {
     margin-top: 15px; padding: 15px;
     background: #f8f9fa; border-radius: 6px;
     border: 1px solid #ecf0f1;
 }
 .variations-block h3 {
-    font-size: 14px; color: #7f8c8d; margin-bottom: 15px; text-transform: uppercase;
+    font-size: 14px; color: #7f8c8d; margin-bottom: 10px; text-transform: uppercase;
 }
-.variation-group { margin-bottom: 12px; }
-.variation-group:last-child { margin-bottom: 0; }
-.variation-pack {
-    font-size: 13px; font-weight: bold; color: #34495e; margin-bottom: 8px;
+
+/* Вкладки 1-го уровня (Тип поставки) */
+.variation-tabs {
+    display: flex; gap: 15px; margin-bottom: 15px; 
+    border-bottom: 2px solid #ecf0f1; padding-bottom: 5px;
 }
-.variation-items {
-    display: flex; flex-wrap: wrap; gap: 8px;
+.var-tab-btn {
+    background: none; border: none; font-size: 13px; color: #95a5a6; 
+    cursor: pointer; font-weight: bold; padding: 5px 0; 
+    position: relative; transition: color 0.2s;
+}
+.var-tab-btn:hover { color: #2c3e50; }
+.var-tab-btn.active { color: #3498db; }
+/* Синяя полоска под активной вкладкой */
+.var-tab-btn.active::after {
+    content: ''; position: absolute; bottom: -7px; left: 0; 
+    width: 100%; height: 2px; background: #3498db;
+}
+
+/* Кнопки 2-го уровня (Опции) */
+.variation-content {
+    min-height: 35px; /* Чтобы блок не прыгал по высоте */
 }
 .variation-btn {
     background: #fff; border: 1px solid #bdc3c7;
