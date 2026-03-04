@@ -27,7 +27,8 @@ export const state = {
     itemsPerPage: 25, 
     currentSpecialization: 'all',
     cartCount: 0,
-    activeSpecificFilters: {}
+    activeSpecificFilters: {},
+    openedProductId: null,
 };
 
 // Инициализация пустых массивов для специфических фильтров

@@ -1,61 +1,77 @@
 import { state } from './state.js';
-import { 
-    populateSpecializations, 
-    applyGlobalContext, 
-    renderProducts, 
-    renderSuggestions, 
-    resetAllFilters, 
-    closeModal 
-} from './ui.js';
+import { populateSpecializations, applyGlobalContext, renderProducts, renderSuggestions, resetAllFilters, closeModal, openModal } from './ui.js';
+import { parseUrlToState, updateUrlFromState } from './router.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Загрузка данных
     fetch('products.json?v=' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
             state.allProducts = data;
+            
+            // НОВОЕ: Сначала читаем ссылку, с которой пришел пользователь
+            parseUrlToState();
+            
             populateSpecializations();
+            // Выставляем правильное значение в селекте специализации
+            document.getElementById('global-specialization').value = state.currentSpecialization;
+            document.getElementById('search-input').value = state.searchQuery;
+            
             applyGlobalContext();
+
+            // Если в ссылке был ID товара, сразу открываем модалку
+            if (state.openedProductId) {
+                openModal(state.openedProductId, false); // false = не пушить в историю снова
+            }
         })
         .catch(err => console.error('Ошибка загрузки:', err));
 
-    // Слушатель смены специализации (Глобальный контекст)
     document.getElementById('global-specialization').addEventListener('change', (e) => {
         state.currentSpecialization = e.target.value;
         resetAllFilters(); 
     });
 
-// Слушатель сортировки
     document.getElementById('sort-select').addEventListener('change', (e) => {
-        state.currentSort = e.target.value; // <-- Должно быть state.currentSort
+        state.currentSort = e.target.value;
         state.currentPage = 1;
         renderProducts();
     });
 
-    // Слушатель поиска (Живой поиск)
     const searchInput = document.getElementById('search-input');
     searchInput.addEventListener('input', (e) => {
         state.searchQuery = e.target.value.toLowerCase().trim();
         state.currentPage = 1;
         renderProducts();
         renderSuggestions(state.searchQuery);
+        updateUrlFromState(); // Обновляем URL при поиске
     });
     
-    // Скрытие подсказок поиска при клике вне
     document.addEventListener('click', (e) => {
         if (!e.target.closest('.search-container')) {
             document.getElementById('search-suggestions').style.display = 'none';
         }
     });
 
-    // Закрытие модального окна при клике на фон
     document.getElementById('product-modal').addEventListener('click', (e) => {
         if (e.target.id === 'product-modal') closeModal();
     });
 });
 
-// Исправление бага с оверлеем при ресайзе экрана
+// НОВОЕ: Обработка кнопок "Назад" и "Вперед" в браузере
+window.addEventListener('popstate', () => {
+    parseUrlToState();
+    document.getElementById('global-specialization').value = state.currentSpecialization;
+    document.getElementById('search-input').value = state.searchQuery;
+    
+    applyGlobalContext();
+    
+    if (state.openedProductId) {
+        openModal(state.openedProductId, false);
+    } else {
+        closeModal(false);
+    }
+});
+
 window.addEventListener('resize', () => {
     if (window.innerWidth > 992) {
         const sidebar = document.getElementById('sidebar');

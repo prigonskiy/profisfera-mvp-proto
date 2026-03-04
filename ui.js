@@ -1,5 +1,6 @@
 import { state, specificFiltersConfig } from './state.js';
 import { getGlobalProducts, buildCategoryTree, getProductCount, isFinalCategorySelected, getNumericPrice } from './filters.js';
+import { updateUrlFromState } from './router.js'; // <-- Добавили роутер
 
 // --- ЭКСПОРТ В ГЛОБАЛЬНУЮ ОБЛАСТЬ (Для работы onclick в HTML) ---
 window.addToCart = addToCart;
@@ -143,7 +144,9 @@ function selectCategory(cat1, cat2, cat3) {
     state.currentCat1 = cat1; state.currentCat2 = cat2; state.currentCat3 = cat3;
     state.currentPage = 1; 
     specificFiltersConfig.forEach(f => state.activeSpecificFilters[f.key] = []);
-    updateBreadcrumbs(); renderProducts();
+    updateBreadcrumbs(); 
+    renderProducts();
+    updateUrlFromState();
 }
 
 function updateBreadcrumbs() {
@@ -169,7 +172,8 @@ function renderBrandFilters(brands, currentProducts) {
         cb.addEventListener('change', (e) => {
             if (e.target.checked) state.selectedBrands.push(brand);
             else state.selectedBrands = state.selectedBrands.filter(b => b !== brand);
-            state.currentPage = 1; renderProducts(); 
+            state.currentPage = 1; renderProducts();
+            updateUrlFromState(); 
         });
         label.appendChild(cb);
         label.insertAdjacentHTML('beforeend', ` ${brand} <span class="cat-count">(${count})</span>`);
@@ -215,6 +219,7 @@ function buildSpecificFilters(currentItems) {
                     if (e.target.checked) state.activeSpecificFilters[config.key].push(val);
                     else state.activeSpecificFilters[config.key] = state.activeSpecificFilters[config.key].filter(v => v !== val);
                     state.currentPage = 1; renderProducts(false); 
+                    updateUrlFromState();
                 });
                 label.appendChild(cb);
                 label.insertAdjacentHTML('beforeend', ` ${val} <span class="cat-count">(${count})</span>`);
@@ -278,6 +283,7 @@ export function resetAllFilters() {
     state.currentPage = 1;
     specificFiltersConfig.forEach(f => state.activeSpecificFilters[f.key] = []);
     applyGlobalContext();
+    updateUrlFromState();
 }
 
 export function renderProducts(rebuildFilters = true) {
@@ -367,11 +373,13 @@ export function renderProducts(rebuildFilters = true) {
         const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
         const skuHtml = p.partNumber ? `<div class="product-sku" onclick="event.stopPropagation(); copySku('${p.partNumber}', this)" title="Нажмите, чтобы скопировать">Арт. ${p.partNumber}</div>` : '';
 
+        const productUrl = `?product=${p.id}`;
+
         card.innerHTML = `
             <img src="${p.image || 'https://via.placeholder.com/250x200?text=Нет+фото'}" alt="${p.name}" class="product-image" onerror="this.src='https://via.placeholder.com/250x200?text=Нет+фото'">
             <div class="product-brand">${p.brand || 'Без бренда'}</div>
             ${skuHtml}
-            <div class="product-name">${p.name}</div>
+            <a href="${productUrl}" class="product-name" onclick="event.preventDefault(); openModal('${p.id}')">${p.name}</a>
             <div style="flex-grow:1"></div>
             <div class="product-price">${priceDisplay}</div>
             <button class="btn-cart" onclick="event.stopPropagation(); addToCart(this)">В корзину</button>
@@ -440,9 +448,12 @@ export function renderSuggestions(query) {
     box.style.display = 'block';
 }
 
-export function openModal(productId) {
+export function openModal(productId, updateUrl = true) {
     const p = state.allProducts.find(item => String(item.id) === String(productId));
     if (!p) return;
+    
+    state.openedProductId = p.id;
+    if (updateUrl) updateUrlFromState();
 
     const modal = document.getElementById('product-modal');
     const content = document.getElementById('modal-body-content');
@@ -514,7 +525,7 @@ export function openModal(productId) {
             variationsHtml += `</div></div>`; // Закрываем variation-content и variations-block
         }
     }
-    
+
     content.innerHTML = `
         <div class="modal-grid">
             <div class="modal-image-col">
@@ -556,6 +567,8 @@ export function switchVariationTab(activeIndex) {
     });
 }
 
-export function closeModal() {
+export function closeModal(updateUrl = true) {
     document.getElementById('product-modal').style.display = 'none';
+    state.openedProductId = null;
+    if (updateUrl) updateUrlFromState(); // Записываем закрытие в историю
 }
