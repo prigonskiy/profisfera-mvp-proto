@@ -20,22 +20,29 @@
         </div>
     </div>
     <header>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰ Фильтры</button>
+        
         <div class="logo">
-            <img src="profisfera.jpg" width="36" height="36">
+            <img src="profisfera.jpg" width="36" height="36" alt="Лого">
             <span class="logo-text">Профисфера</span>
         </div>
         
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Поиск по названию или артикулу...">
+        <div class="search-container" style="position: relative;">
+            <input type="text" id="search-input" placeholder="Поиск по названию или артикулу..." autocomplete="off">
+            <div id="search-suggestions" class="suggestions-box" style="display: none;"></div>
         </div>
 
-        <div>
-            <span>Корзина (0)</span>
+        <div class="cart-wrapper">
+            <span class="cart-icon">🛒</span> Корзина (<span id="cart-counter-val">0</span>)
         </div>
     </header>
 
+    <div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+
     <div class="container">
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
+            <button class="close-mobile-menu" onclick="toggleMobileMenu()">×</button>
+            
             <div class="sidebar-block">
                 <div class="sidebar-title">Каталог</div>
                 <div id="catalog-menu">
@@ -45,7 +52,6 @@
 
             <div class="sidebar-block" id="all-filters-block">
                 <div class="sidebar-title">Фильтры</div>
-                
                 <div id="basic-filters">
                     <div class="filter-group">
                         <h4 style="margin-bottom: 10px; color: #2c3e50;">По производителю</h4>
@@ -54,23 +60,19 @@
                         </div>
                     </div>
                 </div>
-
                 <div id="category-filters" style="display: none; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #ecf0f1;">
                     <h4 style="margin-bottom: 10px; color: #2c3e50;">Специфические фильтры</h4>
                     <p class="filter-hint">Выберите конечную категорию для отображения характеристик.</p>
-                    
-                    <div id="dynamic-filters">
-                        </div>
+                    <div id="dynamic-filters"></div>
                 </div>
             </div>
         </aside>
 
-<main class="main-content">
+        <main class="main-content">
             <div class="top-controls">
                 <div class="breadcrumbs" id="breadcrumbs">
                     Все товары
                 </div>
-                
                 <div class="sorting">
                     <label for="sort-select">Сортировка: </label>
                     <select id="sort-select">
@@ -82,6 +84,8 @@
                     </select>
                 </div>
             </div>
+
+            <div id="active-tags-container" class="active-tags"></div>
 
             <div class="products-grid" id="products-grid">
                 </div>

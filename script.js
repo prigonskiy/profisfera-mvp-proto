@@ -1,4 +1,4 @@
-let allProducts = []; // Исходная база
+let allProducts = []; 
 let categoryTree = {};
 
 let currentCat1 = null;
@@ -11,8 +11,8 @@ let currentSort = 'default';
 let currentPage = 1;
 const itemsPerPage = 25; 
 
-// ГЛОБАЛЬНЫЙ КОНТЕКСТ
 let currentSpecialization = 'all';
+let cartCount = 0; // Состояние корзины
 
 const specificFiltersConfig = [
     { key: 'series', label: 'Серия', isArray: false },
@@ -37,27 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             allProducts = data;
-            
-            // Собираем все доступные специализации из базы
             populateSpecializations();
-
-            // Первичная отрисовка
             applyGlobalContext();
         })
-        .catch(err => console.error('Ошибка загрузки products.json:', err));
+        .catch(err => console.error('Ошибка:', err));
 
-    // Слушатель на глобальный переключатель специализации
     document.getElementById('global-specialization').addEventListener('change', (e) => {
         currentSpecialization = e.target.value;
-        // При смене врача сбрасываем всё (категории, бренды, страницу)
-        currentCat1 = currentCat2 = currentCat3 = null;
-        selectedBrands = [];
-        searchQuery = '';
-        document.getElementById('search-input').value = '';
-        currentPage = 1;
-        specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
-        
-        applyGlobalContext();
+        resetAllFilters(); // При смене врача сбрасываем всё
     });
 
     document.getElementById('sort-select').addEventListener('change', (e) => {
@@ -66,62 +53,195 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts();
     });
 
-    document.getElementById('search-input').addEventListener('input', (e) => {
+    const searchInput = document.getElementById('search-input');
+    searchInput.addEventListener('input', (e) => {
         searchQuery = e.target.value.toLowerCase().trim();
         currentPage = 1;
         renderProducts();
+        renderSuggestions(searchQuery); // Показываем умные подсказки
     });
     
+    // Скрываем подсказки при клике вне
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-container')) {
+            document.getElementById('search-suggestions').style.display = 'none';
+        }
+    });
+
     document.getElementById('product-modal').addEventListener('click', (e) => {
         if (e.target.id === 'product-modal') closeModal();
     });
 });
 
-// Заполнение выпадающего списка специализаций
-function populateSpecializations() {
-    const specs = new Set();
-    allProducts.forEach(p => {
-        if (p.specializations) {
-            p.specializations.forEach(s => specs.add(s));
-        }
-    });
+// --- UI ФУНКЦИИ (КОРЗИНА, АРТИКУЛ, МЕНЮ) ---
+function addToCart(btnElement) {
+    cartCount++;
+    const counterEl = document.getElementById('cart-counter-val');
+    counterEl.textContent = cartCount;
+    
+    // Анимация прыжка
+    counterEl.classList.remove('pop-anim');
+    void counterEl.offsetWidth; // trigger reflow
+    counterEl.classList.add('pop-anim');
 
-    const select = document.getElementById('global-specialization');
-    [...specs].sort().forEach(spec => {
-        const opt = document.createElement('option');
-        opt.value = spec;
-        opt.textContent = spec;
-        select.appendChild(opt);
+    // Изменение кнопки
+    const originalText = btnElement.textContent;
+    btnElement.textContent = 'Добавлено! ✔';
+    btnElement.classList.add('added');
+    
+    setTimeout(() => {
+        btnElement.textContent = originalText;
+        btnElement.classList.remove('added');
+    }, 1500);
+}
+
+function copySku(sku, element) {
+    navigator.clipboard.writeText(sku).then(() => {
+        element.classList.add('copied');
+        setTimeout(() => element.classList.remove('copied'), 1500);
     });
 }
 
-// Получение товаров, актуальных для выбранного врача
+function toggleMobileMenu() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('mobile-overlay');
+    const isActive = sidebar.classList.contains('active');
+    
+    if (isActive) {
+        sidebar.classList.remove('active');
+        overlay.style.display = 'none';
+    } else {
+        sidebar.classList.add('active');
+        overlay.style.display = 'block';
+    }
+}
+
+// Умный поиск (подсказки)
+function renderSuggestions(query) {
+    const box = document.getElementById('search-suggestions');
+    if (query.length < 2) {
+        box.style.display = 'none';
+        return;
+    }
+
+    const contextProducts = getGlobalProducts();
+    const matches = contextProducts.filter(p => {
+        const matchesName = p.name && p.name.toLowerCase().includes(query);
+        const matchesSku = p.partNumber && String(p.partNumber).toLowerCase().includes(query);
+        return matchesName || matchesSku;
+    }).slice(0, 6); // Берем только топ 6 результатов
+
+    if (matches.length === 0) {
+        box.style.display = 'none';
+        return;
+    }
+
+    box.innerHTML = '';
+    matches.forEach(p => {
+        const item = document.createElement('div');
+        item.className = 'suggestion-item';
+        item.onclick = () => {
+            openModal(p.id);
+            box.style.display = 'none';
+            document.getElementById('search-input').value = p.name; // Подставляем имя
+            searchQuery = p.name.toLowerCase();
+            renderProducts();
+        };
+        
+        item.innerHTML = `
+            <img src="${p.image || 'https://via.placeholder.com/40'}" onerror="this.src='https://via.placeholder.com/40'">
+            <div class="suggestion-info">
+                <div class="suggestion-name">${p.name}</div>
+                <div class="suggestion-sku">Арт. ${p.partNumber || '—'}</div>
+            </div>
+        `;
+        box.appendChild(item);
+    });
+    box.style.display = 'block';
+}
+
+function resetAllFilters() {
+    currentCat1 = currentCat2 = currentCat3 = null;
+    selectedBrands = [];
+    searchQuery = '';
+    document.getElementById('search-input').value = '';
+    currentPage = 1;
+    specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
+    applyGlobalContext();
+}
+
+// Быстрые теги
+function renderActiveTags() {
+    const container = document.getElementById('active-tags-container');
+    container.innerHTML = '';
+    let hasTags = false;
+
+    // Функция создания одного чипса
+    const createChip = (text, onClickAction) => {
+        hasTags = true;
+        const chip = document.createElement('div');
+        chip.className = 'tag-chip';
+        chip.innerHTML = `<span>${text}</span> <button title="Удалить">×</button>`;
+        chip.querySelector('button').onclick = onClickAction;
+        container.appendChild(chip);
+    };
+
+    if (currentCat3) createChip(`Категория: ${currentCat3}`, () => selectCategory(currentCat1, currentCat2, null));
+    else if (currentCat2) createChip(`Категория: ${currentCat2}`, () => selectCategory(currentCat1, null, null));
+    else if (currentCat1) createChip(`Категория: ${currentCat1}`, () => selectCategory(null, null, null));
+
+    selectedBrands.forEach(b => createChip(`Бренд: ${b}`, () => {
+        selectedBrands = selectedBrands.filter(brand => brand !== b);
+        currentPage = 1; renderProducts();
+    }));
+
+    specificFiltersConfig.forEach(config => {
+        activeSpecificFilters[config.key].forEach(val => {
+            createChip(`${config.label}: ${val}`, () => {
+                activeSpecificFilters[config.key] = activeSpecificFilters[config.key].filter(v => v !== val);
+                currentPage = 1; renderProducts();
+            });
+        });
+    });
+
+    if (hasTags) {
+        const resetBtn = document.createElement('button');
+        resetBtn.className = 'clear-all-btn';
+        resetBtn.textContent = 'Сбросить всё';
+        resetBtn.onclick = resetAllFilters;
+        container.appendChild(resetBtn);
+    }
+}
+
+// --- БАЗОВЫЕ ФУНКЦИИ ---
+function populateSpecializations() {
+    const specs = new Set();
+    allProducts.forEach(p => { if (p.specializations) p.specializations.forEach(s => specs.add(s)); });
+    const select = document.getElementById('global-specialization');
+    [...specs].sort().forEach(spec => {
+        const opt = document.createElement('option');
+        opt.value = spec; opt.textContent = spec; select.appendChild(opt);
+    });
+}
+
 function getGlobalProducts() {
     if (currentSpecialization === 'all') return allProducts;
-    
     return allProducts.filter(p => {
-        // Если специализация не указана - товар универсальный (показываем всем)
         if (!p.specializations || p.specializations.length === 0) return true;
-        // Иначе проверяем, есть ли нужный врач в списке
         return p.specializations.includes(currentSpecialization);
     });
 }
 
-// Применение глобального контекста (перестройка всего сайта)
 function applyGlobalContext() {
     const currentProducts = getGlobalProducts();
-    
     buildCategoryTree(currentProducts);
     renderMenu();
-    
     const contextBrands = [...new Set(currentProducts.map(p => p.brand).filter(b => b !== ''))].sort();
     renderBrandFilters(contextBrands, currentProducts);
-    
     updateBreadcrumbs();
     renderProducts();
 }
 
-// Строим дерево категорий только из доступных товаров
 function buildCategoryTree(currentProducts) {
     categoryTree = {};
     currentProducts.forEach(p => {
@@ -132,36 +252,30 @@ function buildCategoryTree(currentProducts) {
     });
 }
 
-// Фильтр брендов: показываем только те бренды, которые есть в контексте
 function renderBrandFilters(brands, currentProducts) {
     const container = document.getElementById('brand-filters-container');
     container.innerHTML = '';
-    
     if (brands.length === 0) return;
-
     brands.forEach(brand => {
-        // Подсчет товаров бренда в ТЕКУЩЕМ контексте
         const count = currentProducts.filter(p => p.brand === brand).length;
-
         const label = document.createElement('label');
         const cb = document.createElement('input');
-        cb.type = 'checkbox';
-        cb.value = brand;
+        cb.type = 'checkbox'; cb.value = brand;
         
+        // Восстанавливаем состояние при перерисовке
+        if(selectedBrands.includes(brand)) cb.checked = true;
+
         cb.addEventListener('change', (e) => {
             if (e.target.checked) selectedBrands.push(brand);
             else selectedBrands = selectedBrands.filter(b => b !== brand);
-            currentPage = 1; 
-            renderProducts(); 
+            currentPage = 1; renderProducts(); 
         });
-        
         label.appendChild(cb);
         label.insertAdjacentHTML('beforeend', ` ${brand} <span class="cat-count">(${count})</span>`);
         container.appendChild(label);
     });
 }
 
-// Подсчет товаров в меню (с учетом глобального контекста)
 function getProductCount(cat1, cat2, cat3) {
     const currentProducts = getGlobalProducts();
     return currentProducts.filter(p => {
@@ -180,90 +294,70 @@ function getProductCount(cat1, cat2, cat3) {
 function renderMenu() {
     const menuContainer = document.getElementById('catalog-menu');
     menuContainer.innerHTML = '';
-
     for (const [cat1, subcats] of Object.entries(categoryTree)) {
         const block1 = document.createElement('div');
         block1.className = 'cat-level-1 open'; 
-        
         const count1 = getProductCount(cat1, null, null);
         const title1 = document.createElement('div');
         title1.className = 'cat-level-1-title';
         title1.innerHTML = `<span>${cat1} <span class="cat-count">(${count1})</span></span> <span>▼</span>`;
-        
         const list2 = document.createElement('ul');
         list2.className = 'cat-level-2';
-
         for (const [cat2, subcats3] of Object.entries(subcats)) {
             const item2 = document.createElement('li');
             item2.className = 'cat-level-2-item';
-            
             const count2 = getProductCount(cat1, cat2, null);
             const title2 = document.createElement('div');
             title2.className = 'cat-level-2-title';
             const hasCat3 = subcats3.size > 0;
             title2.innerHTML = `<span>${cat2} <span class="cat-count">(${count2})</span></span> ${hasCat3 ? '<span>▼</span>' : ''}`;
-            
             const list3 = document.createElement('ul');
             list3.className = 'cat-level-3';
-
             if (hasCat3) {
                 Array.from(subcats3).forEach(cat3 => {
                     const li3 = document.createElement('li');
                     const count3 = getProductCount(cat1, cat2, cat3);
                     li3.innerHTML = `${cat3} <span class="cat-count">(${count3})</span>`;
                     
+                    // Подсветка активной категории
+                    if (currentCat3 === cat3) li3.classList.add('active');
+
                     li3.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        selectCategory(cat1, cat2, cat3);
+                        e.stopPropagation(); selectCategory(cat1, cat2, cat3);
                         document.querySelectorAll('.cat-level-3 li').forEach(el => el.classList.remove('active'));
                         li3.classList.add('active');
+                        if(window.innerWidth <= 992) toggleMobileMenu(); // Закрываем меню на моб.
                     });
                     list3.appendChild(li3);
                 });
             }
-
             title2.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const isOpen = item2.classList.contains('open');
                 block1.querySelectorAll('.cat-level-2-item').forEach(el => el.classList.remove('open'));
                 if (!isOpen && hasCat3) item2.classList.add('open');
-                
                 selectCategory(cat1, cat2, null);
                 document.querySelectorAll('.cat-level-3 li').forEach(el => el.classList.remove('active'));
+                if(!hasCat3 && window.innerWidth <= 992) toggleMobileMenu();
             });
-
-            item2.appendChild(title2);
-            item2.appendChild(list3);
-            list2.appendChild(item2);
+            item2.appendChild(title2); item2.appendChild(list3); list2.appendChild(item2);
         }
-
         title1.addEventListener('click', () => {
             const isOpen = block1.classList.contains('open');
             document.querySelectorAll('.cat-level-1').forEach(el => el.classList.remove('open'));
-            if (!isOpen) {
-                block1.classList.add('open');
-                selectCategory(cat1, null, null);
-            } else {
-                selectCategory(null, null, null);
-            }
+            if (!isOpen) { block1.classList.add('open'); selectCategory(cat1, null, null); } 
+            else { selectCategory(null, null, null); }
             document.querySelectorAll('.cat-level-3 li').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.cat-level-2-item').forEach(el => el.classList.remove('open'));
         });
-
-        block1.appendChild(title1);
-        block1.appendChild(list2);
-        menuContainer.appendChild(block1);
+        block1.appendChild(title1); block1.appendChild(list2); menuContainer.appendChild(block1);
     }
 }
 
 function selectCategory(cat1, cat2, cat3) {
-    currentCat1 = cat1;
-    currentCat2 = cat2;
-    currentCat3 = cat3;
-    currentPage = 1; 
-    specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
-    updateBreadcrumbs();
-    renderProducts();
+    currentCat1 = cat1; currentCat2 = cat2; currentCat3 = cat3;
+    currentPage = 1; specificFiltersConfig.forEach(f => activeSpecificFilters[f.key] = []);
+    updateBreadcrumbs(); renderProducts();
 }
 
 function updateBreadcrumbs() {
@@ -278,9 +372,7 @@ function updateBreadcrumbs() {
 function isFinalCategorySelected() {
     if (!currentCat1 || !currentCat2) return false;
     const subcats3 = categoryTree[currentCat1][currentCat2];
-    if (subcats3 && subcats3.size > 0) {
-        return currentCat3 !== null && currentCat3 !== undefined;
-    }
+    if (subcats3 && subcats3.size > 0) return currentCat3 !== null && currentCat3 !== undefined;
     return true;
 }
 
@@ -288,33 +380,25 @@ function buildSpecificFilters(currentItems) {
     const categoryFiltersBlock = document.getElementById('category-filters');
     const dynamicFiltersContainer = document.getElementById('dynamic-filters');
     dynamicFiltersContainer.innerHTML = '';
-
     let hasAnyFilter = false;
 
     specificFiltersConfig.forEach(config => {
         const valueCounts = {};
-        
         currentItems.forEach(item => {
             const val = item[config.key];
             if (val) {
-                if (config.isArray) {
-                    val.forEach(v => { if(v) valueCounts[v] = (valueCounts[v] || 0) + 1; });
-                } else {
-                    valueCounts[val] = (valueCounts[val] || 0) + 1;
-                }
+                if (config.isArray) { val.forEach(v => { if(v) valueCounts[v] = (valueCounts[v] || 0) + 1; }); } 
+                else { valueCounts[val] = (valueCounts[val] || 0) + 1; }
             }
         });
 
         const uniqueValues = Object.keys(valueCounts);
-
         if (uniqueValues.length > 0) {
             hasAnyFilter = true;
             const valuesArray = uniqueValues.sort();
-            
             const groupDiv = document.createElement('div');
             groupDiv.className = 'filter-group';
             groupDiv.innerHTML = `<h4 style="margin-bottom: 8px; color: #34495e;">${config.label}</h4>`;
-            
             const scrollDiv = document.createElement('div');
             scrollDiv.className = 'scrollable-filters';
             scrollDiv.style.maxHeight = '150px';
@@ -323,25 +407,18 @@ function buildSpecificFilters(currentItems) {
                 const count = valueCounts[val];
                 const label = document.createElement('label');
                 const cb = document.createElement('input');
-                cb.type = 'checkbox';
-                cb.value = val;
-                
+                cb.type = 'checkbox'; cb.value = val;
                 if (activeSpecificFilters[config.key].includes(val)) cb.checked = true;
-
                 cb.addEventListener('change', (e) => {
                     if (e.target.checked) activeSpecificFilters[config.key].push(val);
                     else activeSpecificFilters[config.key] = activeSpecificFilters[config.key].filter(v => v !== val);
-                    currentPage = 1;
-                    renderProducts(false); 
+                    currentPage = 1; renderProducts(false); 
                 });
-
                 label.appendChild(cb);
                 label.insertAdjacentHTML('beforeend', ` ${val} <span class="cat-count">(${count})</span>`);
                 scrollDiv.appendChild(label);
             });
-
-            groupDiv.appendChild(scrollDiv);
-            dynamicFiltersContainer.appendChild(groupDiv);
+            groupDiv.appendChild(scrollDiv); dynamicFiltersContainer.appendChild(groupDiv);
         }
     });
 
@@ -361,17 +438,13 @@ function formatPrice(priceVal) {
     let numStr = String(priceVal).replace(/\s/g, '').replace(',', '.');
     let num = parseFloat(numStr);
     if (isNaN(num)) return priceVal; 
-    return new Intl.NumberFormat('ru-RU', {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-    }).format(num);
+    return new Intl.NumberFormat('ru-RU', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(num);
 }
 
 function renderProducts(rebuildFilters = true) {
     const grid = document.getElementById('products-grid');
     grid.innerHTML = '';
 
-    // База товаров теперь берется из глобального контекста!
     const contextProducts = getGlobalProducts();
 
     let filteredBase = contextProducts.filter(p => {
@@ -388,6 +461,13 @@ function renderProducts(rebuildFilters = true) {
     });
 
     if (searchQuery !== '') renderMenu();
+    
+    // Рендерим быстрые теги
+    renderActiveTags();
+    
+    // Восстанавливаем галочки брендов, если мы сбросили фильтры
+    const contextBrands = [...new Set(contextProducts.map(p => p.brand).filter(b => b !== ''))].sort();
+    renderBrandFilters(contextBrands, filteredBase);
 
     if (rebuildFilters) {
         if (isFinalCategorySelected()) buildSpecificFilters(filteredBase);
@@ -428,7 +508,12 @@ function renderProducts(rebuildFilters = true) {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     
     if (totalItems === 0) {
-        grid.innerHTML = '<div class="no-results">По выбранным критериям товары не найдены.</div>';
+        grid.innerHTML = `
+            <div class="no-results">
+                <h3>По выбранным критериям товары не найдены.</h3>
+                <p style="color:#7f8c8d; margin: 15px 0;">Попробуйте изменить параметры поиска или сбросить фильтры.</p>
+                <button class="clear-all-btn" onclick="resetAllFilters()">Сбросить фильтры</button>
+            </div>`;
         renderPagination(0, 0);
         return;
     }
@@ -443,15 +528,18 @@ function renderProducts(rebuildFilters = true) {
         
         const formattedPrice = formatPrice(p.price);
         const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
-        const skuHtml = p.partNumber ? `<div class="product-sku">Арт. ${p.partNumber}</div>` : '';
+        
+        // Артикул теперь копируется по клику
+        const skuHtml = p.partNumber ? `<div class="product-sku" onclick="event.stopPropagation(); copySku('${p.partNumber}', this)" title="Нажмите, чтобы скопировать">Арт. ${p.partNumber}</div>` : '';
 
         card.innerHTML = `
             <img src="${p.image || 'https://via.placeholder.com/250x200?text=Нет+фото'}" alt="${p.name}" class="product-image" onerror="this.src='https://via.placeholder.com/250x200?text=Нет+фото'">
             <div class="product-brand">${p.brand || 'Без бренда'}</div>
             ${skuHtml}
             <div class="product-name">${p.name}</div>
+            <div style="flex-grow:1"></div>
             <div class="product-price">${priceDisplay}</div>
-            <button class="btn-cart" onclick="event.stopPropagation(); alert('Добавлено в корзину!')">В корзину</button>
+            <button class="btn-cart" onclick="event.stopPropagation(); addToCart(this)">В корзину</button>
         `;
         grid.appendChild(card);
     });
@@ -462,50 +550,28 @@ function renderProducts(rebuildFilters = true) {
 function renderPagination(totalPages, current) {
     const container = document.getElementById('pagination');
     container.innerHTML = '';
-    
     if (totalPages <= 1) return; 
 
     const prevBtn = document.createElement('button');
-    prevBtn.className = 'page-btn';
-    prevBtn.textContent = 'Назад';
-    prevBtn.disabled = current === 1;
-    prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) { 
-            currentPage--; 
-            renderProducts(false); 
-            window.scrollTo({ top: 0, behavior: 'smooth' }); 
-        }
-    });
+    prevBtn.className = 'page-btn'; prevBtn.textContent = 'Назад'; prevBtn.disabled = current === 1;
+    prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; renderProducts(false); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
     container.appendChild(prevBtn);
 
     for (let i = 1; i <= totalPages; i++) {
         const btn = document.createElement('button');
-        btn.className = `page-btn ${i === current ? 'active' : ''}`;
-        btn.textContent = i;
-        btn.addEventListener('click', () => {
-            currentPage = i;
-            renderProducts(false);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        btn.className = `page-btn ${i === current ? 'active' : ''}`; btn.textContent = i;
+        btn.addEventListener('click', () => { currentPage = i; renderProducts(false); window.scrollTo({ top: 0, behavior: 'smooth' }); });
         container.appendChild(btn);
     }
 
     const nextBtn = document.createElement('button');
-    nextBtn.className = 'page-btn';
-    nextBtn.textContent = 'Вперед';
-    nextBtn.disabled = current === totalPages;
-    nextBtn.addEventListener('click', () => {
-        if (currentPage < totalPages) { 
-            currentPage++; 
-            renderProducts(false); 
-            window.scrollTo({ top: 0, behavior: 'smooth' }); 
-        }
-    });
+    nextBtn.className = 'page-btn'; nextBtn.textContent = 'Вперед'; nextBtn.disabled = current === totalPages;
+    nextBtn.addEventListener('click', () => { if (currentPage < totalPages) { currentPage++; renderProducts(false); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
     container.appendChild(nextBtn);
 }
 
 function openModal(productId) {
-    const p = allProducts.find(item => item.id === productId);
+    const p = allProducts.find(item => String(item.id) === String(productId));
     if (!p) return;
 
     const modal = document.getElementById('product-modal');
@@ -513,10 +579,8 @@ function openModal(productId) {
 
     const formattedPrice = formatPrice(p.price);
     const priceDisplay = formattedPrice === 'Цена по запросу' ? formattedPrice : `${formattedPrice} ₽`;
-    const skuDisplay = p.partNumber ? `<div class="product-sku">Арт. ${p.partNumber}</div>` : '';
+    const skuDisplay = p.partNumber ? `<div class="product-sku" onclick="copySku('${p.partNumber}', this)" title="Копировать">Арт. ${p.partNumber}</div>` : '';
 
-    // Таблица характеристик
-// Таблица характеристик
     let charsHtml = '';
     if (p.series) charsHtml += `<tr><th>Серия</th><td>${p.series}</td></tr>`;
     if (p.colors && p.colors.length > 0) charsHtml += `<tr><th>Цвет</th><td>${p.colors.join(', ')}</td></tr>`;
@@ -530,7 +594,6 @@ function openModal(productId) {
     if (p.hardness) charsHtml += `<tr><th>Твёрдость</th><td>${p.hardness}</td></tr>`;
     if (p.purposes && p.purposes.length > 0) charsHtml += `<tr><th>Предназначение</th><td>${p.purposes.join('<br>')}</td></tr>`;
     if (p.specializations && p.specializations.length > 0) charsHtml += `<tr><th>Подходит для</th><td>${p.specializations.join(', ')}</td></tr>`;
-
     const charsTable = charsHtml ? `<table class="char-table"><tbody>${charsHtml}</tbody></table>` : '<p style="margin-top:20px;color:#7f8c8d;">Нет дополнительных характеристик</p>';
 
     content.innerHTML = `
@@ -542,9 +605,13 @@ function openModal(productId) {
                 <div class="product-brand" style="margin-bottom:10px;">${p.brand || 'Без бренда'}</div>
                 ${skuDisplay}
                 <h2 class="modal-title">${p.name}</h2>
-                <div class="modal-price">${priceDisplay}</div>
-                <button class="btn-cart" style="width: 100%; font-size: 16px;">Добавить в корзину</button>
+                
                 ${charsTable}
+                
+                <div class="modal-sticky-bottom">
+                    <div class="modal-price">${priceDisplay}</div>
+                    <button class="btn-cart" onclick="addToCart(this)">Добавить в корзину</button>
+                </div>
             </div>
         </div>
     `;
@@ -555,3 +622,18 @@ function openModal(productId) {
 function closeModal() {
     document.getElementById('product-modal').style.display = 'none';
 }
+
+// --- ИСПРАВЛЕНИЕ БАГА С ОВЕРЛЕЕМ ПРИ РЕСАЙЗЕ ---
+window.addEventListener('resize', () => {
+    // 992px - это брейкпоинт, который мы задали в CSS (@media max-width: 992px)
+    if (window.innerWidth > 992) {
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('mobile-overlay');
+        
+        // Если сайдбар открыт, принудительно его закрываем
+        if (sidebar && sidebar.classList.contains('active')) {
+            sidebar.classList.remove('active');
+            overlay.style.display = 'none';
+        }
+    }
+});
