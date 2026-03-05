@@ -463,3 +463,26 @@ header {
 .product-full-desc ul, .product-full-desc ol {
     margin-left: 20px; margin-bottom: 15px;
 }
+
+/* Галерея в модалке */
+.modal-gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    overflow-x: auto;
+}
+.modal-gallery-thumbnails img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.modal-gallery-thumbnails img:hover {
+    border-color: #3498db;
+}
+.modal-gallery-thumbnails img.active {
+    border-color: #2980b9;
+}

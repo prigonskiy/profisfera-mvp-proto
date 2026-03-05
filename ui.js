@@ -337,7 +337,7 @@ export function renderProducts(rebuildFilters = true) {
         return true;
     });
 
-// Блок сортировки внутри renderProducts
+    // Блок сортировки внутри renderProducts
     if (state.currentSort === 'alpha-asc') fullyFiltered.sort((a, b) => a.name.localeCompare(b.name));
     else if (state.currentSort === 'alpha-desc') fullyFiltered.sort((a, b) => b.name.localeCompare(a.name));
     else if (state.currentSort === 'price-asc') fullyFiltered.sort((a, b) => getNumericPrice(a.price) - getNumericPrice(b.price));
@@ -374,15 +374,21 @@ export function renderProducts(rebuildFilters = true) {
         const skuHtml = p.partNumber ? `<div class="product-sku" onclick="event.stopPropagation(); copySku('${p.partNumber}', this)" title="Нажмите, чтобы скопировать">Арт. ${p.partNumber}</div>` : '';
         const productUrl = `?product=${p.id}`;
         
-        // НОВОЕ: Готовим краткое описание
         const shortDescHtml = p.shortDesc ? `<div class="product-short-desc">${p.shortDesc}</div>` : '';
 
+        // Берем миниатюру первого изображения из массива, если она есть
+        const firstThumb = (p.images && p.images.length > 0) 
+            ? p.images[0].thumb 
+            : 'https://via.placeholder.com/250x200?text=Нет+фото';
+
+        // ВОТ ЗДЕСЬ БЫЛА ОШИБКА: код обрывался сразу после картинки
         card.innerHTML = `
-            <img src="${p.image || 'https://via.placeholder.com/250x200?text=Нет+фото'}" alt="${p.name}" class="product-image" onerror="this.src='https://via.placeholder.com/250x200?text=Нет+фото'">
+            <img src="${firstThumb}" alt="${p.name}" class="product-image" onerror="this.src='https://via.placeholder.com/250x200?text=Нет+фото'">
             <div class="product-brand">${p.brand || 'Без бренда'}</div>
             ${skuHtml}
             <a href="${productUrl}" class="product-name" onclick="event.preventDefault(); openModal('${p.id}')">${p.name}</a>
-            ${shortDescHtml} <div style="flex-grow:1"></div>
+            ${shortDescHtml}
+            <div style="flex-grow:1"></div>
             <div class="product-price">${priceDisplay}</div>
             <button class="btn-cart" onclick="event.stopPropagation(); addToCart(this)">В корзину</button>
         `;
@@ -486,7 +492,6 @@ export function openModal(productId, updateUrl = true) {
         const siblings = state.allProducts.filter(item => item.groupId === p.groupId);
         
         if (siblings.length > 1) {
-            // Группируем по первому уровню (Тип поставки)
             const groupsByDelivery = {};
             siblings.forEach(s => {
                 const delivery = s.deliveryType || 'Стандартная поставка';
@@ -499,16 +504,13 @@ export function openModal(productId, updateUrl = true) {
             
             const deliveryKeys = Object.keys(groupsByDelivery);
             
-            // 1 УРОВЕНЬ: Строим вкладки (Табы)
             variationsHtml += `<div class="variation-tabs">`;
             deliveryKeys.forEach((delivery, idx) => {
-                // Если тип поставки совпадает с текущим товаром - делаем вкладку активной
                 const isActive = (delivery === (p.deliveryType || 'Стандартная поставка')) ? 'active' : '';
                 variationsHtml += `<button class="var-tab-btn ${isActive}" onclick="switchVariationTab(${idx})">${delivery}</button>`;
             });
             variationsHtml += `</div>`;
 
-            // 2 УРОВЕНЬ: Строим блоки с опциями
             variationsHtml += `<div class="variation-content">`;
             deliveryKeys.forEach((delivery, idx) => {
                 const isActive = (delivery === (p.deliveryType || 'Стандартная поставка'));
@@ -524,10 +526,32 @@ export function openModal(productId, updateUrl = true) {
                 });
                 variationsHtml += `</div>`;
             });
-            variationsHtml += `</div></div>`; // Закрываем variation-content и variations-block
+            variationsHtml += `</div></div>`; 
         }
     }
-const modalShortDesc = p.shortDesc ? `<div style="font-size: 14px; color: #7f8c8d; margin-bottom: 15px; line-height: 1.5;">${p.shortDesc}</div>` : '';
+
+    // Собираем HTML для галереи миниатюр
+    let galleryHtml = '';
+    let mainImageSrc = 'https://via.placeholder.com/400?text=Нет+фото';
+    
+    if (p.images && p.images.length > 0) {
+        mainImageSrc = p.images[0].orig; // Главная картинка - первый оригинал
+        
+        // Если картинок больше одной, рисуем полосу миниатюр
+        if (p.images.length > 1) {
+            const thumbs = p.images.map((img, index) => `
+                <img src="${img.thumb}" 
+                     class="${index === 0 ? 'active' : ''}"
+                     onclick="document.getElementById('modal-main-image').src='${img.orig}'; 
+                              document.querySelectorAll('.modal-gallery-thumbnails img').forEach(el => el.classList.remove('active'));
+                              this.classList.add('active');"
+                >
+            `).join('');
+            galleryHtml = `<div class="modal-gallery-thumbnails">${thumbs}</div>`;
+        }
+    }
+
+    const modalShortDesc = p.shortDesc ? `<div style="font-size: 14px; color: #7f8c8d; margin-bottom: 15px; line-height: 1.5;">${p.shortDesc}</div>` : '';
     const modalFullDesc = p.fullDesc ? `
         <div class="product-full-desc">
             <h3>Описание</h3>
@@ -535,20 +559,26 @@ const modalShortDesc = p.shortDesc ? `<div style="font-size: 14px; color: #7f8c8
         </div>
     ` : '';
 
+    // ВОТ ЗДЕСЬ БЫЛА ОШИБКА: Код модалки был обрезан наполовину
     content.innerHTML = `
         <div class="modal-grid">
             <div class="modal-image-col">
-                <img src="${p.image || 'https://via.placeholder.com/400?text=Нет+фото'}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/400?text=Нет+фото'">
+                <img id="modal-main-image" src="${mainImageSrc}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/400?text=Нет+фото'">
+                ${galleryHtml}
             </div>
             <div class="modal-info-col">
                 <div class="product-brand" style="margin-bottom:10px;">${p.brand || 'Без бренда'}</div>
                 ${skuDisplay}
                 <h2 class="modal-title">${p.name}</h2>
                 
-                ${modalShortDesc} ${variationsHtml}
+                ${modalShortDesc}
+                
+                ${variationsHtml}
                 ${charsTable}
                 
-                ${modalFullDesc} <div class="modal-sticky-bottom">
+                ${modalFullDesc}
+                
+                <div class="modal-sticky-bottom">
                     <div class="modal-price">${priceDisplay}</div>
                     <button class="btn-cart" onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
