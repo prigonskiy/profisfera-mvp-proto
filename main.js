@@ -4,7 +4,7 @@ import { parseUrlToState, updateUrlFromState } from './router.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    fetch('http://IP_ВАШЕГО_СЕРВЕРА:8000/api/products')
+    fetch('https://185.185.71.149/api/products')
         .then(response => response.json())
         .then(data => {
             state.allProducts = data;
