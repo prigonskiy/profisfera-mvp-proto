@@ -37,13 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProducts();
     });
 
+    // Находим поле поиска и меняем текст-подсказку (чтобы было понятно, что ищет везде)
     const searchInput = document.getElementById('search-input');
+    searchInput.placeholder = "Поиск по названию или артикулу...";
+
     searchInput.addEventListener('input', (e) => {
+        // Если пользователь начал искать не в каталоге — перекидываем его "тихо" (не сбивая фокус)
+        if (window.location.hash !== '#catalog') {
+            history.pushState(null, null, window.location.search + '#catalog');
+            handleNavigation(); // вызываем смену экранов вручную
+        }
+
         state.searchQuery = e.target.value.toLowerCase().trim();
         state.currentPage = 1;
         renderProducts();
         renderSuggestions(state.searchQuery);
-        updateUrlFromState(); // Обновляем URL при поиске
+        updateUrlFromState();
     });
     
     document.addEventListener('click', (e) => {
@@ -61,7 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('popstate', () => {
     parseUrlToState();
     document.getElementById('global-specialization').value = state.currentSpecialization;
-    document.getElementById('search-input').value = state.searchQuery;
+    
+    // ЗАМЕНИТЕ СТРОКУ С search-input НА ЭТИ ТРИ:
+    const searchEl = document.getElementById('search-input');
+    if (searchEl.value !== state.searchQuery) {
+        searchEl.value = state.searchQuery;
+    }
     
     applyGlobalContext();
     

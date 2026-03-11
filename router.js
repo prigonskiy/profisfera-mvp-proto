@@ -44,3 +44,49 @@ export function updateUrlFromState() {
     const newUrl = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
     window.history.pushState({ path: newUrl }, '', newUrl);
 }
+
+// ==========================================
+// РОУТИНГ: ПЕРЕКЛЮЧЕНИЕ СТРАНИЦ
+// ==========================================
+function handleNavigation() {
+    let hash = window.location.hash || '#home';
+    
+    // Скрываем все страницы
+    document.querySelectorAll('.page-section').forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Убираем активный класс у всех ссылок
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+
+    // Показываем нужную страницу
+    const pageId = 'page-' + hash.substring(1);
+    const targetPage = document.getElementById(pageId);
+    
+    if (targetPage) {
+        targetPage.style.display = 'block';
+    } else {
+        document.getElementById('page-home').style.display = 'block';
+        hash = '#home';
+    }
+
+    // Подсвечиваем активную ссылку в меню
+    const activeLink = document.querySelector(`.nav-link[href="${hash}"]`);
+    if (activeLink) activeLink.classList.add('active');
+
+    // НОВОЕ: Скрываем панель специализации везде, кроме каталога
+    const contextBar = document.querySelector('.global-context-bar');
+    if (contextBar) {
+        contextBar.style.display = (hash === '#catalog') ? 'block' : 'none';
+    }
+}
+
+// Слушаем изменения адресной строки
+window.addEventListener('hashchange', handleNavigation);
+
+// Вызываем один раз при загрузке страницы
+document.addEventListener('DOMContentLoaded', () => {
+    handleNavigation();
+});

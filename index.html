@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,98 +8,132 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="global-context-bar">
         <div class="context-container">
             <span>Я ищу товары для:</span>
             <select id="global-specialization">
                 <option value="all">Всех специалистов</option>
-                </select>
+            </select>
         </div>
     </div>
-    <header>
-        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰ Фильтры</button>
-        
-        <div class="logo">
-            <img src="profisfera.jpg" width="36" height="36" alt="Лого">
-            <span class="logo-text">Профисфера</span>
-        </div>
-        
-        <div class="search-container" style="position: relative;">
-            <input type="text" id="search-input" placeholder="Поиск по названию или артикулу..." autocomplete="off">
-            <div id="search-suggestions" class="suggestions-box" style="display: none;"></div>
+    <header class="header">
+        <div class="logo">Профисфера</div>
+
+        <nav class="main-nav">
+            <a href="#home" class="nav-link">Главная</a>
+            <a href="#catalog" class="nav-link">Каталог</a>
+            <a href="#about" class="nav-link">О компании</a>
+            <a href="#delivery" class="nav-link">Доставка и оплата</a>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Поиск по артикулу...">
+            <div id="search-suggestions" class="search-suggestions" style="display: none;"></div>
         </div>
 
-        <div class="cart-wrapper">
-            <span class="cart-icon">🛒</span> Корзина (<span id="cart-counter-val">0</span>)
+        <div class="cart" onclick="openCart()">
+            🛒 Корзина <span id="cart-counter-val">0</span>
         </div>
     </header>
 
-    <div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+    <section id="page-home" class="page-section">
+        <div class="hero-banner">
+            <h1>Современные решения для стоматологии</h1>
+            <p>Надежные материалы, инструменты и оборудование от ведущих мировых производителей с быстрой доставкой.</p>
+            <button class="btn-primary" onclick="window.location.hash='#catalog'">Перейти в каталог</button>
+        </div>
 
-    <div class="container">
-        <aside class="sidebar" id="sidebar">
-            <button class="close-mobile-menu" onclick="toggleMobileMenu()">×</button>
-            
-            <div class="sidebar-block">
-                <div class="sidebar-title">Каталог</div>
-                <div id="catalog-menu">
-                    <div style="color: #7f8c8d; font-size: 14px;">Загрузка каталога...</div>
-                </div>
-            </div>
+        <div class="features-grid">
+            <div class="feature-card">🚚 Бесплатная доставка от 5000 ₽</div>
+            <div class="feature-card">🛡️ Только сертифицированные товары</div>
+            <div class="feature-card">📦 Наличие на собственном складе</div>
+        </div>
+    </section>
 
-            <div class="sidebar-block" id="all-filters-block">
-                <div class="sidebar-title">Фильтры</div>
-                <div id="basic-filters">
-                    <div class="filter-group">
-                        <h4 style="margin-bottom: 10px; color: #2c3e50;">По производителю</h4>
-                        <div id="brand-filters-container" class="scrollable-filters">
-                            <span style="font-size: 13px; color: #95a5a6;">Загрузка производителей...</span>
-                        </div>
+    <section id="page-about" class="page-section" style="display: none;">
+        <div class="content-container">
+            <h2>О компании Профисфера</h2>
+            <p>Здесь будет размещена подробная информация о вашей компании, миссии и опыте работы на рынке.</p>
+        </div>
+    </section>
+
+    <section id="page-delivery" class="page-section" style="display: none;">
+        <div class="content-container">
+            <h2>Условия доставки и оплаты</h2>
+            <p>Информация о способах оплаты, курьерских службах и гарантиях.</p>
+        </div>
+    </section>
+
+    <section id="page-catalog" class="page-section" style="display: none;">
+        <div id="mobile-overlay" class="mobile-overlay" onclick="toggleMobileMenu()"></div>
+
+        <div class="container">
+            <aside class="sidebar" id="sidebar">
+                <button class="close-mobile-menu" onclick="toggleMobileMenu()">×</button>
+
+                <div class="sidebar-block">
+                    <div class="sidebar-title">Каталог</div>
+                    <div id="catalog-menu">
+                        <div style="color: #7f8c8d; font-size: 14px;">Загрузка каталога...</div>
                     </div>
                 </div>
-                <div id="category-filters" style="display: none; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #ecf0f1;">
-                    <h4 style="margin-bottom: 10px; color: #2c3e50;">Специфические фильтры</h4>
-                    <p class="filter-hint">Выберите конечную категорию для отображения характеристик.</p>
-                    <div id="dynamic-filters"></div>
-                </div>
-            </div>
-        </aside>
 
-        <main class="main-content">
-            <div class="top-controls">
-                <div class="breadcrumbs" id="breadcrumbs">
-                    Все товары
+                <div class="sidebar-block" id="all-filters-block">
+                    <div class="sidebar-title">Фильтры</div>
+                    <div id="basic-filters">
+                        <div class="filter-group">
+                            <h4 style="margin-bottom: 10px; color: #2c3e50;">По производителю</h4>
+                            <div id="brand-filters-container" class="scrollable-filters">
+                                <span style="font-size: 13px; color: #95a5a6;">Загрузка производителей...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="category-filters" style="display: none; margin-top: 20px; padding-top: 15px; border-top: 1px dashed #ecf0f1;">
+                        <h4 style="margin-bottom: 10px; color: #2c3e50;">Специфические фильтры</h4>
+                        <p class="filter-hint">Выберите конечную категорию для отображения характеристик.</p>
+                        <div id="dynamic-filters"></div>
+                    </div>
                 </div>
-                <div class="sorting">
-                    <label for="sort-select">Сортировка: </label>
-                    <select id="sort-select">
-                        <option value="default">По умолчанию</option>
-                        <option value="alpha-asc">По алфавиту (А-Я)</option>
-                        <option value="alpha-desc">По алфавиту (Я-А)</option>
-                        <option value="price-asc">По цене (сначала дешевле)</option>
-                        <option value="price-desc">По цене (сначала дороже)</option>
-                    </select>
+            </aside>
+
+            <main class="main-content">
+                <div class="top-controls">
+                    <div class="breadcrumbs" id="breadcrumbs">
+                        Все товары
+                    </div>
+                    <div class="sorting">
+                        <label for="sort-select">Сортировка: </label>
+                        <select id="sort-select">
+                            <option value="default">По умолчанию</option>
+                            <option value="alpha-asc">По алфавиту (А-Я)</option>
+                            <option value="alpha-desc">По алфавиту (Я-А)</option>
+                            <option value="price-asc">По цене (сначала дешевле)</option>
+                            <option value="price-desc">По цене (сначала дороже)</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
 
-            <div id="active-tags-container" class="active-tags"></div>
+                <div id="active-tags-container" class="active-tags"></div>
 
-            <div class="products-grid" id="products-grid">
-                </div>
+                <div class="products-grid" id="products-grid"></div>
 
-            <div class="pagination" id="pagination"></div>
-        </main>
-    </div>
-<div id="product-modal" class="modal-overlay" style="display: none;">
+                <div class="pagination" id="pagination"></div>
+            </main>
+        </div>
+    </section>
+
+    <div id="product-modal" class="modal-overlay" style="display: none;">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
-            <div class="modal-body" id="modal-body-content">
-                </div>
+            <div class="modal-body" id="modal-body-content"></div>
         </div>
     </div>
     <script type="module" src="main.js"></script>
 </body>
+
 </html>
