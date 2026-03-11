@@ -15,21 +15,35 @@ export function getNumericPrice(priceStr) {
     return isNaN(num) ? Infinity : num;
 }
 
-// 2. Дерево категорий
+// Построить дерево категорий
 export function buildCategoryTree(currentProducts) {
     state.categoryTree = {};
     currentProducts.forEach(p => {
-        if (!p.cat1 || !p.cat2) return;
+        // ИЗМЕНЕНИЕ: Теперь мы не требуем обязательного наличия cat2
+        if (!p.cat1) return; 
+        
         if (!state.categoryTree[p.cat1]) state.categoryTree[p.cat1] = {};
-        if (!state.categoryTree[p.cat1][p.cat2]) state.categoryTree[p.cat1][p.cat2] = new Set();
-        if (p.cat3 && p.cat3.trim() !== '') state.categoryTree[p.cat1][p.cat2].add(p.cat3);
+        
+        // Если есть второй уровень - добавляем его
+        if (p.cat2) {
+            if (!state.categoryTree[p.cat1][p.cat2]) state.categoryTree[p.cat1][p.cat2] = new Set();
+            if (p.cat3 && p.cat3.trim() !== '') state.categoryTree[p.cat1][p.cat2].add(p.cat3);
+        }
     });
 }
 
+// Проверка: дошли ли мы до конечной категории
 export function isFinalCategorySelected() {
-    if (!state.currentCat1 || !state.currentCat2) return false;
+    if (!state.currentCat1) return false;
+    
+    // Если у этой категории 1-го уровня вообще нет вложенных (cat2) - считаем её конечной
+    if (Object.keys(state.categoryTree[state.currentCat1]).length === 0) return true;
+    
+    if (!state.currentCat2) return false;
+    
     const subcats3 = state.categoryTree[state.currentCat1][state.currentCat2];
     if (subcats3 && subcats3.size > 0) return state.currentCat3 !== null && state.currentCat3 !== '';
+    
     return true;
 }
 
