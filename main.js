@@ -95,7 +95,7 @@ window.resetAllFilters = () => {
 // ==========================================
 document.addEventListener('DOMContentLoaded', () => {
     
-    fetch('https://185.185.71.149/api/products')
+    fetch('https://185.185.71.149.nip.io/api/products')
         .then(response => response.json())
         .then(data => {
             state.allProducts = data;
